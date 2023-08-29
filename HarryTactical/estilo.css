@@ -1,0 +1,511 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    margin: 0;
+
+}
+
+div h1{font-size: 18vw; padding: 0 10px;}
+section h2, footer h2{ font-size: 10vw; font-weight: 600;}
+h3{font-size: 2em;}
+section h4{font-size: 2.5em;}
+section h5{
+    color: #818181;
+    font-weight: 400;
+}
+section i{
+    color: orange;
+}
+footer i, header i{
+    color: rgb(234, 255, 0);
+    font-size: 1.8em;
+    
+}
+.bloques1 h4{
+    color: orange;
+    font-size: 2em;
+}
+div p{font-size: 1.5em;}
+ul{
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    padding: 5px;
+}
+.container, .container-seccion2, .container-seccion3{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*HEADER*/
+
+.container-fluid button{
+    margin-top: 25px;
+    
+    
+}
+header{
+    background-color: #2E2E2E;
+   
+}
+header a{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    color: rgb(234, 255, 0);
+}
+
+header .logo{
+    margin-top: 0;
+    height: 80px;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+header .bg-dark, header .menu-colapsado{
+    background-color: #2E2E2E;
+
+}
+
+
+header .text-body-secondary{
+    background-color: #2E2E2E;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.menu-fijo{
+    display: none;
+}
+/*BANNER*/
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65) ), 
+    url(cp1.jpeg);
+    color: white;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    background-position: center;
+    width: 100%;
+}
+
+/*SECCION 1*/
+#seccion1{
+    height: 125vh;
+    background-color: rgb(250, 250, 250);
+    padding-top: 20px;
+    justify-content: center;
+    
+}
+.ifaksolo{
+    display: block;
+}
+.breve p{
+    padding: 15px;
+}
+.breve-descripcion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+.descripcion{
+    display: inline-block;
+    justify-content: center;
+}
+.descripcion p{
+    font-size: 1em;
+}
+.descripcion h4{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.descripcion1, .descripcion2{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.descripcion1 ul li, .descripcion2 ul li{
+    display: inline;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.bloques1 img{
+    margin-left: 30px;
+    height: 30vh;
+    rotate: 45deg;
+   display: inline-block;
+
+
+}
+/*SECCION 2*/
+#seccion2{
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
+   
+}
+.carousel{
+    padding: 15px;
+    margin: 0;
+  /*  width: 400px;*/
+}
+.ver-mas{
+    padding-top: 20px;
+    justify-content: center;
+}
+.elegir-colores{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+  /*  width: 90%;*/
+    margin: 20px;
+
+}
+.elegir-colores img{
+    height: 110px;
+    width: 110px;
+   margin: 20px;
+    border-width: 3px;
+    border: 8px solid #ff9f0f;
+    border-radius: 50%;
+}
+.elegir-colores img:hover{
+    scale: 1.05;
+    transition: 0.3s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*SECCION 3*/
+#seccion3{
+    height: 180vh;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65) ), 
+    url(uso1.jpg);
+    color: rgb(250, 250, 250);
+    
+}
+.dondecomprar{
+    padding: 20px;
+    
+}
+
+.cartas{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    
+    
+}
+.card p{
+    
+    color: #818181;
+    font-size: 1.2em;
+}
+.card-title{
+   
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.card img{
+    width: 290px;
+}
+.card{
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(250, 250, 250);
+}
+.btn-contactar {
+   color: #d48815;
+   background-color: rgb(255, 255, 255);
+   border: none;
+   font-weight: 500;
+}
+.btn-comprar{
+    background-color: #ff9f0f;
+    padding: 10px;
+    border-radius: 7px;
+    border-style: solid ;
+    border-color: #ff9f0f;
+}
+button:hover{
+    scale: 1.02;
+    transition: 0.3s;
+
+    
+}
+form{
+    margin-bottom: 10px;
+}
+
+/*SECCION4*/
+footer{
+    width: 100%;
+    height: 70vh;
+    background-color: #2E2E2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: aliceblue;
+
+}
+
+footer i{
+    padding: 5px;
+
+}
+footer a{
+    color: white;
+    font-size: 1.2em;
+}
+footer a:hover{
+    color: rgb(234, 255, 0);
+    transition: 0.3s;
+}
+.iconos{
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.iconos1{
+   /* width: 40%;*/
+   display: inline-block;
+   padding: 10px;
+   
+}
+.iconos2{
+    /*width: 60%;
+    text-align: center;*/
+    justify-content: center;
+    padding: 10px;
+}
+.logo-horarios{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+   
+}
+.logo-horarios p{
+    
+    font-size: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.logo-horarios img{
+    width: 30%;
+    
+    
+}
+.copywrite{
+    font-size: 0.85em;
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(250, 250, 250);
+    
+}
+
+@media (min-width:720px) {
+    .fa-bars{
+        display: none;
+    }
+    
+    header{
+        position: fixed;
+        z-index: 2000;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu-desplazable{
+        display: none;
+    }
+    header .menu-fijo{
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+        padding-right: 20px;
+        
+    }
+    section h2, footer h2{
+        font-size: 50px;
+    }
+    /*BANNER*/
+    
+    div h1{
+        font-size: 110px;
+    }
+    div p{
+        font-size: 25px;
+    }
+    /*SECCION 1*/
+    
+    #seccion1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 120vh;
+        padding-top: 20px;
+    }
+    .ifaksolo{
+        display: inline-flex;
+        flex-direction: row;
+        
+    }
+    
+    .descripcion1, .descripcion2{
+        width: 250px;
+    }
+    .bloques1{
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        height: 400px;
+    }
+    .bloques1 img{
+        height: 350px;
+        display: inline-flex;
+    }
+    .descripcion p{
+        font-size: 20px;
+    }
+    .descripcion h4{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    /*SECCION 2*/
+    
+    #seccion2{
+        display: inline-flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        height: 90vh;
+        
+    }
+    .elegir-colores{
+        width: 400px;       
+
+    }
+    .elegir-colores img{
+        height: 150px;
+        width: 150px;
+    }
+    .ver-mas{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 450px;
+        
+    }
+    .fotos{
+       
+        width: 600px;
+    }
+    .seccion2 .container{
+        max-width: none;
+        margin: 0;
+    }
+    .container-seccion2, .container-seccion3{
+        max-width: none;
+        margin: none;
+    }
+
+    /*SECCION 3*/
+    #seccion3{
+        display: inline-flex;
+        flex-direction: row;
+        padding: 20px;
+        height: 90vh;
+        width: 100%;
+    }
+    .comprar{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .dondecomprar{
+        width: 450px;/*PONER MISMO WIDTH A COLORES DISPONIBLES*/
+       /* background-color: aqua;*/
+       margin-top: 30px;
+    }
+    .cartas{
+       /* background-color: #818181;*/
+       flex-wrap: nowrap;
+    }
+    .card{
+        width: 230px;
+    }
+    .card img{
+        width: 220px;
+    }
+    /*SECCION 4*/
+    footer{
+        height: 65vh;
+        display: inline-block;
+        justify-content: center;
+    }
+    #seccion4{
+        display: inline-flex;
+        width: 100%;
+    }
+    #seccion4 h2{
+        padding: 20px;
+    }
+    .iconos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px;
+    }
+    .iconos1{
+        display: inline-block;
+        flex-wrap: wrap;
+       width:50%;
+
+    }
+    .iconos2{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .logo-horarios{
+        
+        
+    }
+    .copywrite{
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
+    
+
+}
