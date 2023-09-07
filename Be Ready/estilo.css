@@ -1,0 +1,740 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+header .navbar{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #4dc1bf;
+    position: fixed;
+    z-index: 3000;
+
+}
+.navegador img{
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.menu{
+    font-size: 20px;
+    float: right;
+    
+
+}
+.menu ul{
+    padding: 20px;
+   
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+   
+    margin-right: 30px;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px solid rgb(54, 54, 54);
+}
+.menu ul li a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.banner{
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    padding-top: 70px;
+
+
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.bienvenidos img{
+   height: auto;
+   opacity: 0.4;
+}
+.bienvenidos h1, .bienvenidos h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+
+
+}
+.bienvenidos h2{
+    font-family: 'Beyond the mountains';
+    font-size: 15vw;
+    color:#4dc1bf;   
+    top: 60%;
+    left: 50%;
+    
+
+}
+.bienvenidos h1{
+    font-size: 6vw;
+    color: rgb(255, 255, 255);
+    top: 40%;
+    left: 50%;
+    padding-bottom: 30px;
+
+}
+
+
+/*cajas de info extra*/
+.cajas{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 0; /*borrar linea al acomodar las imagenes del banner*/
+}
+.cuerpo i{
+    
+    margin-top: 20px;
+    font-size: 50px;
+    color: black;
+}
+.info-extra{
+    height: 250px;
+    background-color: beige;
+    display: block;
+    justify-content: center;
+    text-align: center;
+     
+}
+ 
+.info-extra h4{
+    margin-top: 20px;
+    font-weight: 500;
+}
+.info-extra p{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-weight: 100;
+    
+}
+.caja1 img{
+    height: 70px;
+    margin-top: 20px;
+    
+    
+    
+}
+.fa-solid{
+    font-size: 20px;
+
+
+}
+
+.info-extra:hover {
+    transition: 0.4s;
+    color: white;
+    background-color: #33a7a5;
+    
+}
+.caja1{
+    background-color: #D27EE9; 
+}
+.caja2{
+    background-color: #DFA3EF;
+}
+.caja3{
+    background-color: #ECC8F6;
+}
+.caja4{
+    background-color: #F2DAF9;
+}
+
+
+
+/*Seccion 1*/
+#seccion1{
+    background-color: rgb(250, 250, 250);
+    margin-top: auto;
+    text-align: center;
+    display:inline-block;
+    align-content: center;
+    height: 750px;
+}
+hr{
+    text-align: center;
+}
+#seccion1 h2{
+    display: inline-block;
+    align-content: center;
+    font-size: 35px;
+    margin-top: 75px;
+    font-weight: 700;
+
+}
+#seccion1 p{
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+    float: center;
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+#seccion1 h4{
+    font-size: 20px;
+    
+    color: rgb(149, 149, 149);
+}
+hr{
+    width: 250px;
+
+}
+
+.cursos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+.card-img-top{
+    height: 180px;
+    width: 300px;
+    object-fit: cover;
+}
+.card-body{
+    height: 200px;
+}
+.tarjeta{
+    position: static;
+    background-color: white;
+    width: 300px;
+    border: 0;
+}
+.tarjeta a{
+    color: #33a7a5;
+}
+.tarjeta:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    scale: 1.03;
+
+}
+
+.presencial h5{
+    color: #9f4cb6;
+
+}
+.online h5{
+    color: #33a7a5;
+
+}
+.tarjeta h5{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 600;
+
+}
+
+
+
+/*seccion 2*/
+#seccion2{
+    padding-top: 75px;
+    /*background-color: #a756bd;*/
+    color: white;
+    text-align: center;
+    height: 580px;
+    background-image: url(imagenes/fotonosotros.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#seccion2 h2{
+    font-size: 35px;
+    font-weight: 700;
+    
+
+}
+.margin2{
+    /*margin-top: 20px;*/
+} /*arreglar esta parte de margin*/
+.descripcion-nosotros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px;
+    height: 250px;
+    justify-content: center;  
+}
+
+.descripcion-nosotros p{
+    text-align: center;
+    justify-self: center;
+    font-size: 22px;
+}
+.nosotros-texto{
+    width: 55%;
+    padding: 10px;
+    
+}
+/*.descripcion-nosotros img{
+    height: 200px;
+    width: 200px;
+    border: 7px solid white;
+    border-radius: 50% 50%;
+}
+.descripcion-nosotros img, .descripcion-nosotros p{
+    margin-top: 30px;
+}*/
+.nosotros-tabla{
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    
+    
+    
+    
+}
+
+.nosotros-tabla td{
+    padding:30px;
+    font-family: 'Josefin Sans';
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgb(81, 81, 81);
+    color: rgb(255, 255, 255);
+    
+}
+.nosotros-tabla tr{
+
+}
+
+/*seccion3*/
+#seccion3{
+    height: 900px;
+    background-color: rgb(244, 244, 244);
+    display: block;
+    justify-content: center;
+    width: 100%;
+
+}
+.titulo-seccion3{
+    padding-top: 75px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 35px;
+}
+.info-seccion3{
+    padding: 15px;
+    
+    text-align: center;
+    font-weight: 600;
+    color:#278786;
+    
+}
+
+.accordion{
+    width: 750px;
+    text-align: center;
+ 
+}
+span{
+    display: inline-flex;
+    padding: 20px;
+}
+
+
+aside{
+    float: right;
+    margin-left: 20px;
+    color: #9f4cb6;
+    margin-top: -60px;
+    
+}
+
+aside a{
+    text-decoration: none;
+    color: #9f4cb6;
+
+}
+aside img{
+    height: 120px;
+    margin-bottom: -25px;
+}
+.con-utn{
+    margin-top: -20px;
+}
+.con-utn p{
+    margin-top: -30px;
+}
+
+aside div{
+    height: 200px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+aside div h4{
+    font-weight: 600;
+}
+
+/*aside div:hover{
+    transition: 0.4s;
+    color: white;
+    background-color: #33a7a5;
+}*/
+
+
+
+
+
+
+/*seccion4*/
+footer{
+    background-color:#33a7a5;/*COLOR DIFERENTE AL DE LA BARRA DE MENU*/
+    color: rgb(255, 255, 255);
+    height: 440px;
+    width: 100%;
+    padding: 20px 5px;
+    position: static;
+
+    
+}
+.columnas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.columna{
+    width: 300px;
+}
+.whatsapp{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+}
+
+
+.seccion4 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.seccion4 i{
+    color: white;
+    font-size: 35px;
+    padding-left: 8px;
+    
+}
+.seccion4 p {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 30px;
+    
+}
+.logofooter{
+    display: flex;
+   justify-content: right;
+   flex-direction: row-reverse;
+   
+}
+.seccion4 img {
+    height: 150px;
+    margin-left: 50px;
+    
+    
+}
+.seccion4 h6{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+    color: black;
+}
+.fa-location-dot{
+    padding: 10px;
+}
+
+/*PÁGINA CURSOS*/
+.titulo-cursos{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 0;
+
+}
+.info-cursos{
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(244, 244, 244);
+    margin-top: 0;
+
+
+}
+.info-curso{
+    width: 100%;
+}
+.card-title-cursos{
+    text-align: center;
+    font-size: 25px;
+}
+.card-text-chiquito{
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+   
+}
+.small-pr{
+    color: #9f4cb6;
+}
+.small-onl{
+    color: #33a7a5;
+}
+.edades{
+    margin-top: 50px;
+    margin-left: 160px;
+    color: #ff8c00;
+    font-weight: 500;
+
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 20px;
+    
+
+}
+.edades td{
+    
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width:760px) {
+    
+    .menu{
+        display: none;
+    }
+    .navbar img{
+        height: 10vh;
+    }
+    header .navbar{
+        display: block;
+        background-color: #4dc1bf;
+        height: 12vh;
+    }
+
+    .offcanvas-body .nav-link{
+        color: white;
+    }
+    .offcanvas-body{
+        background-color: #4dc1bf;
+
+    }
+    
+    header img{
+        height: 6.5vh;
+        
+    }
+    .bienvenidos h2{
+        font-size: 19vw;
+    }
+    .bienvenidos h1{
+        font-size: 10vw;
+    }
+    
+    .banner, .carousel{
+        height: 90vh;
+    }
+    .banner img{
+        object-fit: cover;
+        height: 90vh;
+        
+    }
+    /*CAJAS INFO EXTRA*/
+    .cajas{
+        flex-wrap: wrap;
+        height: auto;
+
+
+    }
+    /*SECCION 1*/
+    #seccion1{
+        height: auto;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        
+        
+    }
+    .cursos{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+       
+    }
+    
+    /*SECCION 2*/
+    #seccion2{
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .descripcion-nosotros{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .nosotros-tabla{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        padding: 0 10px 0 0;
+        width: 100%;
+        
+    }
+
+   
+    .nosotros-tabla td{
+        padding: 5px;
+        width: 200px;
+        font-family: 'Josefin Sans';
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgb(81, 81, 81);
+        
+    }
+    
+    .nosotros-texto{
+        width: 100%;
+        padding: 5px;
+        
+        
+    }
+    .descripcion-nosotros p{
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    /*.descripcion-nosotros img{
+        
+        height: 150px;
+    width: 150px;
+    border: 5px solid white;
+
+    }
+
+    /*SECCION4*/
+    #seccion3{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .accordion{
+        width: auto;
+        text-align: center;
+        padding: 5px;
+     
+    }
+    span{
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    
+    aside{
+        float:none;
+        margin-left: 0;
+        color: #9f4cb6;
+        margin-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        
+        
+    }
+    .medios-pago{
+        margin-top: -20px;
+    }
+    .medios-pago, .con-utn{
+        width: 50%;
+    }
+    .precios{
+        width: 100%;
+        padding-top: 40px;
+    }
+    /*SECCION 4*/
+    footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .columnas{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .columna{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+
+    }
+    .whatsapp{
+        margin-right: 50px;
+
+    }
+    .iconos-contacto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ubicacion{
+        width: auto;
+    }
+    .logofooter{
+        display: block;
+        flex-direction: column-reverse;
+    }
+    /**/
+}
