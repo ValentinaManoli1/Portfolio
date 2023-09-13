@@ -1,0 +1,334 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+header, nav .menu-celular {
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    z-index: 3000;
+    
+    
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 20px ;
+    padding-top: 0;
+}
+.menu-celular img{
+    height: 75px;
+}
+.menu-celular button{
+    padding-top: 20px;
+    color: aliceblue;
+    font-size: 30px;
+}
+.menu-colapsado{
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-items: center;
+}
+.menu-colapsado a{
+    text-decoration: none;
+    text-align: center;
+    color: antiquewhite;
+
+}
+.menu-computadora{
+    display: none;
+}
+h2{
+    font-family: 'SS Nickson One';
+
+}
+
+.Inicio{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(banner.jpg);
+    background-size: cover;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+.Inicio h1{
+    color: rgb(255, 255, 255);
+    font-family: 'SS Nickson One';
+    font-size: 5.8em;
+    text-align: center;
+
+}
+ .Inicio table, .Inicio p{
+    color: rgb(255, 255, 255);
+    
+
+}
+.Inicio h1, .Inicio table, .Inicio p, .Inicio button{
+    z-index: 2000;
+
+
+}
+.Inicio h1{
+
+    
+}
+.Inicio table{
+    font-size: 1.2em;
+}
+.Inicio p{
+    font-size: 1.1em;
+}
+.Inicio button{
+    font-size: 1.2em;
+    height: 50px;
+    width: auto;
+    background-color: rgb(255, 255, 255, 0);
+    color: rgb(255, 145, 0);
+    border: 3px solid rgb(255, 145, 0);
+    font-weight: 600;
+}
+.Inicio button:hover{
+    background-color: rgb(255, 145, 0);
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+/*SOBRE NOSOTROS*/
+iframe{
+    width: 85vw;
+    height: auto;
+}
+.Nosotros{
+    height: auto;
+    background-color: rgb(251, 251, 251);
+    padding:30px 25px;
+
+
+}
+.Nosotros h2{
+    margin-top: 0;
+    font-size: 3.3em;
+text-align: center;
+    margin-bottom: 0;
+color: rgb(70, 60, 49);
+}
+.Nosotros h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0;
+    color: rgb(93, 84, 84);
+}
+.Nosotros p{
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+
+/*MENU*/
+.banner-menu, .banner-tragos{
+    height: 30vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(banner.jpg);
+}
+.banner-menu h2, .banner-tragos h2{
+    margin-top: 0;
+    font-size: 3.3em;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.menu{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+ul li {
+    list-style: none;
+    text-align: center;
+    
+}
+.menu ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+.dropdown button{
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-width: 3px;
+    border-color: black;
+    color: black;
+}
+/*AGREGAR FILTROS DEL MENU*/
+
+
+/*MENU*/
+.lista-item img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+.lista-item b{
+    font-family: 'SS Nickson One';
+    font-size: 35px;
+    font-weight: 400;
+
+}
+.menu{
+    height: auto;
+    background-color:rgb(255, 255, 255);
+}
+.menu .dropdown{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 1.3em;
+    font-weight: 1000;
+    padding: 30px 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*SUCURSALES*/
+.Galeria{
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px 25px;
+    justify-items: center;
+    align-items: center;
+    
+
+    
+
+}
+.Galeria div{
+    overflow: hidden;
+    position: relative;  
+    
+    
+}
+
+.Galeria img{
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    margin-top: 25px;
+    filter: brightness(40%);
+}
+.Galeria img:hover{
+    
+    transition: 0.3s;
+}
+
+.Galeria .sucursal{
+    background-color: rgba(255, 255, 255, 0);
+    width: 170px;
+    height: auto;
+    border: solid rgb(255, 255, 255) 3px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    
+
+
+}/*    
+.Galeria .sucursal:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.3s;
+    
+}*/
+
+/*FOOTER*/
+footer {
+    height: auto;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    z-index: 3000;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+    
+    
+}
+footer img{
+    height: 120px;
+    width: auto;
+}
+.seccion-footer{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 25px;
+
+}
+footer h2{
+    font-size: 40px;
+}
+footer i{
+    font-size: 30px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+footer i:hover{
+    background-color: rgb(255, 170, 0);
+    transition: 0.3s;
+}
+footer a{
+    font-size: 18px;
+    
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+footer b{
+    font-size: 20px;
+}
+.logofooter{
+    display: block;
+    align-content: center;
+    text-align: center;
+    
+}
+.contactar{
+
+}
+
+.copywrite{
+    padding-top: 50px;
+    color: rgb(120, 120, 120);
+    text-align: center;
+    font-size: 15px;
+}
