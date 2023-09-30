@@ -1,0 +1,211 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    
+    
+}
+h3 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 22px;
+}
+H3, H4{
+    font-weight: 600;
+    padding: 15px 10px;
+}
+button:not(.boton-pedir) {
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    border-radius: 50px;
+    font-weight: 800;
+}
+.boton-pedir{
+    background-color: rgb(255, 255, 255, 0);
+    border: solid 5px rgb(233, 28, 28);
+    padding: 15px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(233, 28, 28);
+    border-radius: 50px;
+    font-weight: 800;
+}
+p{
+    font-size: 18px;
+}
+ul{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.sucursal a{
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+
+}
+header a{
+    color: white;
+    font-size: 20px;
+}
+header a:hover {
+    color: yellow;
+    transition: 0.3s;
+}
+
+
+section, footer{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+
+}
+section{
+    width: 350px;
+}
+header, section, footer {
+    height: auto;
+    padding: 30px;
+}
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(imagenes/banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    
+
+}
+
+/*PARA CELULAR*/
+
+.nav-computadora {
+    display: none;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+.nav-celular{
+    background-color: transparent;
+}
+.nav-celular img{
+    height: 120px;
+    padding-top: -10px;
+}
+.general{
+    margin: 0;
+}
+
+.general img{
+    width: 350px; /*    width: 390px; DE SECTION    */
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+.general div {
+    padding-bottom: 20px;
+    border-radius: 5px;
+    
+}
+.nuestra-historia{
+    background-color: rgb(233, 28, 28, 0.8);
+    
+}
+.nuestra-historia h3, .nuestra-historia p{
+    padding: 20px;
+}
+
+.sucursal{
+    border: solid rgb(230, 230, 230) 0.5px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    
+}
+.sucursal h4{
+    border-bottom: solid rgb(230, 230, 230) 0.5px;
+    padding-left: 20px;
+}
+.sucursal i{
+    padding-left: 20px;
+}
+.sucursal:hover{
+    box-shadow: 5px 5px 15px rgb(229, 229, 229);
+    transition: 0.3s;
+}
+.sucursal:hover img{
+    transform:scale(1.1);
+    transition: 0.3s;
+}
+.sucursales img{
+    filter: brightness(85%);
+    width: 320px;
+    object-fit: cover;
+    height: 200px;    
+}
+
+/*FOOTER*/
+
+h2 {
+    color: rgb(198, 198, 198);
+    font-weight: 800;
+}
+.divfooter a{
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.divfooter a:hover{
+    color: rgb(255, 166, 0);
+    transition: 0.3s;
+}
+.divfooter{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 20px;
+}
+.redes{
+    padding-top: 20px;
+}
+.redes i{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.redes i:hover{
+    background-color: orange;
+    transition: 0.3s;
+}
+
+.copywrite p{
+    color: rgb(140, 140, 140);
+    font-size: 15px;
+    padding-top: 45px;
+    text-align: center;
+    margin-bottom: 0;
+}

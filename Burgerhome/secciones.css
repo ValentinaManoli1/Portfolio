@@ -1,0 +1,197 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    
+    
+}
+h3 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 22px;
+}
+H3, H4{
+    font-weight: 600;
+    padding: 15px 10px;
+}
+button {
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    border-radius: 25%;
+    font-weight: 800;
+}
+
+p{
+    font-size: 18px;
+}
+ul{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.sucursal a{
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+
+}
+header a{
+    color: white;
+    font-size: 20px;
+}
+header a:hover {
+    color: yellow;
+    transition: 0.3s;
+}
+
+
+section, footer{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+
+}
+section{
+    width: 350px;
+}
+header, section, footer {
+    height: auto;
+    padding: 30px;
+}
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+header {
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    
+
+}
+
+/*PARA CELULAR*/
+
+.nav-computadora {
+    display: none;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+.nav-celular{
+    background-color: transparent;
+}
+.nav-celular img{
+    height: 120px;
+    padding-top: -10px;
+}
+
+h2:not(footer h2) {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+.divfooter a{
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.divfooter a:hover{
+    color: rgb(255, 166, 0);
+    transition: 0.3s;
+}
+.divfooter{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 20px;
+}
+.redes{
+    padding-top: 20px;
+}
+.redes i{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.redes i:hover{
+    background-color: orange;
+    transition: 0.3s;
+}
+
+.copywrite p{
+    color: rgb(140, 140, 140);
+    font-size: 15px;
+    padding-top: 45px;
+    text-align: center;
+    margin-bottom: 0;
+}
+button {
+    background-color: black;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    border-radius: 25%;
+    font-weight: 800;
+}
+
+.producto img{
+    width: 350px; /*    width: 390px; DE SECTION    */
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+/*Pagina sucursales*/
+.sucursal{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.3px solid rgb(207, 207, 207);
+
+    box-shadow: 2px 2px 10px  rgb(207, 207, 207);
+}
+
+.sucursal ul{
+    align-content: center;
+    padding: 0 15px;
+
+}
+.sucursal ul li{
+    display:inline-flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.sucursal ul li a, .sucursal ul li i, .sucursal ul li p{
+    padding: 0;
+    display: inline-flex;
+    margin-bottom: 0;
+}
+.sucursal ul li i{
+    padding: 0 10px;
+}
+.sucursal h3{
+    text-align: center;
+}
+
