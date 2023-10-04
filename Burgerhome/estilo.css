@@ -3,9 +3,11 @@
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 50px;
     color: white;
-    text-align: center;
+    text-align: center; 
+    padding-top: 100px;
+    text-shadow: 4px 4px 4px black;
     
     
 }
@@ -19,7 +21,7 @@ H3, H4{
     font-weight: 600;
     padding: 15px 10px;
 }
-button:not(.boton-pedir) {
+button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
     background-color: black;
     padding: 15px;
     font-size: 15px;
@@ -29,13 +31,13 @@ button:not(.boton-pedir) {
 }
 .boton-pedir{
     background-color: rgb(255, 255, 255, 0);
-    border: solid 5px rgb(233, 28, 28);
+    border: solid 5px rgb(233, 161, 28);
     padding: 15px;
     width: 350px;
     font-size: 20px;
-    color: rgb(233, 28, 28);
+    color: rgb(233, 161, 28);
     border-radius: 50px;
-    font-weight: 800;
+    font-weight: 900;
 }
 p{
     font-size: 18px;
@@ -90,11 +92,65 @@ header {
     background-position: center;
     background-size: cover;
     padding: 0;
+
     
 
 }
 
 /*PARA CELULAR*/
+ /*parte de adentro menu celu*/
+.offcanvas{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.offcanvas-body{
+    padding-top: 20px;
+}
+.offcanvas-body ul li{
+    justify-items: center;
+    text-align: center;
+    padding: 5px 0;
+
+}
+.offcanvas-body ul li a{
+    color: white;
+}
+.active{
+    color: rgb(233, 161, 28);
+}
+.nav-link:hover{
+    color: rgb(233, 161, 28);
+}
+.fa-xmark{
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+}
+.fa-xmark:hover{
+    transition: 0.3s;
+    color: rgb(255, 255, 255, 0.5);
+}
+.abrir-menu{
+    background-color: transparent;
+    border: none;
+    
+}
+.boton-pedir-navbar{
+    align-self: center;
+    text-align: center;
+    background-color: rgb(233, 161, 28);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.seguinos-navbar{
+    margin-top: 70px;
+}
+/*fin menu adentro*/
 
 .nav-computadora {
     display: none;
@@ -129,7 +185,7 @@ header {
     
 }
 .nuestra-historia{
-    background-color: rgb(233, 28, 28, 0.8);
+    background-color: rgb(233, 161, 28, 0.8);
     
 }
 .nuestra-historia h3, .nuestra-historia p{
@@ -177,7 +233,7 @@ h2 {
     box-sizing: border-box;
 }
 .divfooter a:hover{
-    color: rgb(255, 166, 0);
+    color: rgb(233, 161, 28);
     transition: 0.3s;
 }
 .divfooter{
@@ -189,7 +245,7 @@ h2 {
 .redes{
     padding-top: 20px;
 }
-.redes i{
+.fa-brands{
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     color: black;
@@ -197,8 +253,8 @@ h2 {
     font-size: 25px;
     text-align: center;
 }
-.redes i:hover{
-    background-color: orange;
+.fa-brands:hover{
+    background-color: rgb(233, 161, 28);
     transition: 0.3s;
 }
 
