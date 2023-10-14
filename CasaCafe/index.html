@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,400;1,100&family=Homenaje&family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <header>
+        <img src="" alt="" class="logo">
+        <nav class="nav-computadora">
+            <ul>
+                <a href="">Inicio</a>
+                <a href="">Menú</a>
+                <a href="">Sucursales</a>
+                <a href="">Sobre Nosotros</a>
+                <a href="">Contacto</a>
+
+            </ul>
+        </nav>
+        <nav class="nav-celular navbar">
+
+            <div class="container-fluid">
+                <img src="imagenes/logo.png" alt="">
+                <button class="abrir-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class=""><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Casa Café</h5>
+                        <button type="button" class="boton-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">MENÚ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sucursales.html">SUCURSALES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">SOBRE NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="boton-pedir-navbar" href="https://www.pedidosya.com/" target="_blank">HACER PEDIDO</button>
+                            </li>
+                            
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 seguinos-navbar">
+                            <li class="nav-item">
+                                <a class="seguinos">¡Seguinos!</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="inicio seccion" id="inicio">
+        <div class="texto-inicio">
+            <h1>Casa Café</h1>
+            <p>Viví una experiencia única, sentite en tu Casa</p>
+        </div>
+        <div class="imagen-inicio">
+            <img src="imagenes/banner1.jpg" alt="">
+        </div>
+    </section>
+    <section class="nosotros seccion">
+        <h2>Sobre Nosotros</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus? Obcaecati sunt quisquam harum officiis, expedita culpa doloribus nemo adipisci eos illum sequi eum natus eligendi praesentium quis voluptatum accusamus!</p>
+        <div class="caracteristica">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h3>Especialidad</h3>
+            <p>Nuestros granos de café provenientes de Brasil y Colombia, son cuidadosamente seleccionados por nuestros especialistas.</p>
+        </div>
+        
+        <div class="caracteristica">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Para todos</h3>
+            <p>Con nuestro amplio menú ofrecemos gran variedad de productos aptos para celíacos y veganos</p>
+        </div>
+        <div class="caracteristica">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h3>Comodidad</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus.</p>
+        </div>
+        
+    </section>
+    <section class="menu seccion" id="menu">
+        <h2>Nuestro Menú</h2> <!--Qué comer-->
+        <!--FILTROS-->
+        <button>Dulce</button>
+        <button>Salado</button>
+        <button>Bebidas</button>
+        <button>Para compartir</button>
+        <!--DULCE-->
+        <div class="menu-dulce comida">
+            <h3>Dulce</h3>
+            <div class="tortas dulce">
+                <h4>Tortas</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="cookies dulce">
+                <h4>Cookies</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="budines dulce">
+                <h4>Budines</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--SALADO-->
+        <div class="menu-salado comida">
+            <h3>Salado</h3>
+            <div class="sandwiches salado">
+                <h4>Sandwiches</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="tostadas salado">
+                <h4>Tostadas</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="ensaladas salado">
+                <h4>Ensaladas</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--BEBIDAS-->
+        <div class="menu-bebidas comida">
+            <h3>Bebidas</h3>
+            <div class="cafe bebidas">
+                <h4>Café</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="te bebidas">
+                <h4>Té</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="otros bebidas">
+                <h4>Otros</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--PARA COMPARTIR-->
+        <div class="menu-compartir comida">
+            <h3>Para compartir</h3>
+            <div class="opcion-dulce opcion">
+                <h4>Opciones dulces</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="opcion-salada opcion">
+                <h4>Opciones saladas</h4>
+                <img src="" alt="">
+                <div>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="sucursales seccion" id="sucursales">
+        <h2>Nuestras sucursales</h2> <!--Donde visitarnos-->
+        <div class="sucursal">
+            <img src="imagenes/santelmo.jpg" alt="">
+            <h3>San Telmo, CABA</h3>
+            <div class="direccion-sucursal info-sucursal">
+                <i class="fa-solid fa-location-dot"></i><a href="">Carlos Calvo 789</a>
+
+            </div>
+            <div class="hora-sucursal info-sucursal">
+                <i class="fa-regular fa-clock"></i><p>De 11 a 20hs</p>
+
+            </div>
+        </div>
+        <div class="sucursal">
+            <img src="imagenes/banner1.jpg" alt="">
+            <h3>Palermo, CABA</h3>
+            <div class="direccion-sucursal info-sucursal">
+                <i class="fa-solid fa-location-dot"></i><a href="">San Martín 67</a>
+
+            </div>
+            <div class="hora-sucursal info-sucursal">
+                <i class="fa-regular fa-clock"></i><p>De 15 a 22hs</p>
+   
+            </div>
+        </div>
+        <div class="sucursal">
+            <img src="imagenes/villacrespo.jpg" alt="">
+            <h3>Villa Crespo, CABA</h3>
+            <div class="direccion-sucursal info-sucursal">
+                <i class="fa-solid fa-location-dot"></i><a href="">Belgrano 123</a>
+
+            </div>
+            <div class="hora-sucursal info-sucursal">
+                <i class="fa-regular fa-clock"></i><p>De 10 a 20hs</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <footer>
+        <h2>Contacto</h2>
+        <div class="logo-footer">
+            <img src="" alt="">
+        </div>
+        <div class="redes">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-solid fa-envelope"></i>
+
+
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="copywrite">
+            <p>Casa Café 2023 &copy; - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>

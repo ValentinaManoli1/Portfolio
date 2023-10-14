@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-align: left;
+
+}
+h2{
+    font-family: 'Homenaje', sans-serif;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Homenaje', sans-serif;
+}
+h4, a, p, button{
+    font-family: 'Overpass', sans-serif;
+    font-weight: ;
+}
+a{
+    text-decoration: none;
+}
+button{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+/*NAV CELULAR*/
+.offcanvas{
+    background-color: #6e6460;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.offcanvas-body{
+    padding-top: 20px;
+}
+.offcanvas-body ul li{
+    justify-items: center;
+    text-align: center;
+    padding: 5px 0;
+
+}
+.offcanvas-body ul li a{
+    color: white;
+}
+.active{
+    color: #e39b7d;
+}
+.nav-link:hover{
+    color: #e39b7d;
+}
+.fa-xmark{
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.fa-xmark:hover{
+    transition: 0.3s;
+    color: rgb(255, 255, 255, 0.5);
+}
+.abrir-menu{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 50%;
+
+    
+}
+.boton-pedir-navbar{
+    align-self: center;
+    text-align: center;
+    background-color: #e39b7d;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+}
+
+.seguinos-navbar{
+    margin-top: 70px;
+}
+/*fin menu adentro*/
+.container-fluid{
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: row;
+    height: 85px;
+}
+.nav-computadora {
+    display: none;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    padding-top: -40px;
+}
+
+.nav-celular img{
+    height: 85px;
+}
+
+/*HEADER*/
+header{
+    background-color: transparent;
+    
+    
+    height: 75px;
+   /* position: fixed;*/
+    width: 100%;
+    
+}
+/*SECCIONES*/
+.seccion{
+    height: auto;
+    padding: 25px 20px;
+    
+}
+.seccion:not(.menu){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+/*BANNER*/
+.imagen-inicio{
+    display: none;
+}
+.inicio{
+    height: 95vh;
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(imagenes/banner2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    padding: 150px 20px 0 20px;
+    color: #e8d3a9;
+}
+.texto-inicio p{
+    color: #e8d3a9;
+    font-size: 30px;
+    padding: 10px 20px;
+}
+/*SOBRE NOSOTROS*/
+.nosotros{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: #6e6460;
+
+}
+.caracteristica{
+    height: 350px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    box-shadow: 0px 0px 10px 1px rgba(137,179,153,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.caracteristica i, .caracteristica h3{
+    color: #89b399;
+    
+}
+.caracteristica i{
+    font-size: 80px;
+    margin-top: 30px;
+}
+.caracteristica h3{
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.caracteristica p{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 15px;
+}
+.nosotros p{
+    font-size: 20px;
+    margin-bottom: 0;
+    
+}
+/*MENU TERMINAR DE ARMARRRRRRR*/
+
+.menu{
+    
+    background-color: #e39b7d;
+}
+
+/**/
+.sucursales{
+    background-color: rgb(250, 250, 250);
+    
+
+}
+.sucursal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-top: 25px;
+    background-color: rgb(250, 250, 250);
+    
+    box-shadow: 0px 0px 10px 1px #bcbfa3;
+
+}
+.sucursal i{
+    font-size: 25px;
+}
+.sucursal p, .sucursal a{
+    font-size: 20px;
+    color: #6e6460;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+.sucursal img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sucursal h3{
+    font-size: 30px;
+    padding: 10px 0 0 10px;
+}
+.sucursal h3, .sucursal i{
+    color: #bcbfa3;
+}
+.sucursales h2{
+    color: #6e6460;
+}
+.info-sucursal{
+    display: inline-flex;
+    border-bottom: solid 1.05px #bcbfa3;
+    justify-items: center;
+    padding: 10px;
+}
