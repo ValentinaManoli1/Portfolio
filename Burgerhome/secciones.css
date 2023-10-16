@@ -32,6 +32,9 @@ button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
     border-radius: 50px;
     font-weight: 800;
 }
+.boton-cerrar{
+    border: none;
+}
 .boton-pedir{
     background-color: rgb(255, 255, 255, 0);
     border: solid 5px rgb(233, 161, 28);
@@ -77,10 +80,11 @@ section, footer{
 
 }
 section{
-
+    padding: 140px 35px;
     margin-right: 0;
+    height: auto;
 }
-header, section, footer {
+header, footer {
     height: auto;
     padding: 30px;
 }
@@ -91,11 +95,14 @@ footer {
 }
 header {
     background-color: black;
-    height: 20vh;
+    height: 12vh;
     width: 100%;
     background-position: center;
     background-size: cover;
     padding: 0;
+
+    position: fixed;
+    z-index: 2000;
     
 
 }
@@ -131,6 +138,7 @@ header {
     background-color: transparent;
     font-size: 30px;
     text-align: center;
+    
 }
 .fa-xmark:hover{
     transition: 0.3s;
@@ -147,6 +155,7 @@ header {
     background-color: rgb(233, 161, 28);
     color: rgb(255, 255, 255);
     border-radius: 50px;
+    border: none;
     padding: 15px;
 }
 
@@ -166,8 +175,8 @@ header {
     background-color: transparent;
 }
 .nav-celular img{
-    height: 120px;
-    padding-top: -10px;
+    height: 100px;
+
 }
 /*FOOTER*/
 h2:not(footer h2) {
@@ -302,9 +311,11 @@ footer h2{
 .takeaway{
     justify-self: center;
     align-self: center;
+    font-weight: 700;
     color: rgb(233, 161, 28);
     font-size: 20px;
     padding: 15px;
+    margin-left: 85px;
 }
 .sucursal h3{
     text-align: center;

@@ -31,6 +31,9 @@ button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
     border-radius: 50px;
     font-weight: 800;
 }
+.boton-cerrar{
+    border: none;
+}
 .boton-pedir{
     background-color: rgb(255, 255, 255, 0);
     border: solid 5px rgb(233, 161, 28);
@@ -139,6 +142,7 @@ header {
     background-color: transparent;
     font-size: 30px;
     text-align: center;
+    
 }
 .fa-xmark:hover{
     transition: 0.3s;
@@ -156,6 +160,7 @@ header {
     color: rgb(255, 255, 255);
     border-radius: 50px;
     padding: 15px;
+    border: none;
 }
 
 .seguinos-navbar{
