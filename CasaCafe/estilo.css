@@ -1,19 +1,30 @@
 *{
     box-sizing: border-box;
 }
-h1{
+h1, h2, .offcanvas-title{
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 200;
     text-transform: uppercase;
     font-style: italic;
     font-size: 80px;
-    letter-spacing: 5px;
     text-align: left;
 
 }
+.offcanvas-title{ /*TITULO ADENTRO DEL NAV CELULAR*/
+    font-size: 35px;
+    text-align: center;
+}
+h1{
+    font-size: 80px;
+    font-weight: 200;
+    letter-spacing: 5px;
+
+}
 h2{
-    font-family: 'Homenaje', sans-serif;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 h3{
     font-family: 'Homenaje', sans-serif;
@@ -25,12 +36,7 @@ h4, a, p, button{
 a{
     text-decoration: none;
 }
-button{
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 50px;
 
-}
 
 /*NAV CELULAR*/
 .offcanvas{
@@ -72,7 +78,6 @@ button{
     background-color: transparent;
     border: none;
     position: relative;
-    top: 50%;
 
     
 }
@@ -85,23 +90,29 @@ button{
     padding: 15px;
     border: none;
 }
-
+.boton-cerrar{
+    background-color: transparent;
+    border: none;
+}
 .seguinos-navbar{
     margin-top: 70px;
 }
+
 /*fin menu adentro*/
+
 .container-fluid{
     position: relative;
     margin-top: -30px;
     display: flex;
     flex-direction: row;
     height: 85px;
+    
 }
 .nav-computadora {
     display: none;
 }
 .fa-bars{
-    color: white;
+    color: #e8d3a9;
     font-size: 30px;
     padding-top: -40px;
 }
@@ -124,13 +135,10 @@ header{
 .seccion{
     height: auto;
     padding: 25px 20px;
-    
-}
-.seccion:not(.menu){
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
 h2{
     font-size: 50px;
@@ -141,13 +149,14 @@ h2{
     display: none;
 }
 .inicio{
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-position: center;
     object-fit: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(imagenes/banner2.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -85px;
 }
 h1{
     padding: 150px 20px 0 20px;
@@ -169,11 +178,12 @@ h1{
 
 }
 .caracteristica{
-    height: 350px;
-    width: 350px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 25px;
-    box-shadow: 0px 0px 10px 1px rgba(137,179,153,1);
+    height: auto;
+    width: auto;
+    padding-bottom: 5px;
+   /* background-color: rgb(255, 255, 255);*/
+    
+    /*box-shadow: 0px 0px 10px 1px rgba(137,179,153,1);*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,6 +196,10 @@ h1{
 .caracteristica i{
     font-size: 80px;
     margin-top: 30px;
+    
+}
+.icono-nosotros{
+    
 }
 .caracteristica h3{
     margin-top: 20px;
@@ -195,20 +209,69 @@ h1{
 .caracteristica p{
     text-align: center;
     font-size: 20px;
-    padding: 15px 15px;
+    padding: 15px 15px 0 15px;
 }
 .nosotros p{
     font-size: 20px;
     margin-bottom: 0;
+    text-align:center;
     
 }
 /*MENU TERMINAR DE ARMARRRRRRR*/
 
 .menu{
-    
+    background-image: url(imagenes/logo2.png);
+    background-size: 170px;
+    background-repeat: repeat;
     background-color: #e39b7d;
+    align-items: center;
 }
+.boton-menu{
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Homenaje', sans-serif;
+    border: none;
+    background-color: #e8d3a9;
+    color: #6e6460;
 
+}
+.comida h3{
+    font-size: 55px;
+}
+.opciones-menu h4{
+    font-size: 22px;
+    display: inline-flex;
+
+}
+.comida{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding-top: 70px;
+
+}
+.menu-dulce{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(imagenes/dulce.jpg);
+
+}
+.menu-salado{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(imagenes/salado.jpg);
+
+}
+.menu-bebidas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(imagenes/bebidas.jpg);
+
+}
+.menu-compartir{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65)), url(imagenes/compartir.jpg);
+
+}
 /**/
 .sucursales{
     background-color: rgb(250, 250, 250);
