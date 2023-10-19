@@ -20,11 +20,11 @@ body:not(h1, h2) {
 
 }
 
-h2 {
+h2, h6 {
     font-family: 'Paytone One', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    
+
 }
 
 h2:not(.Nosotros h2) {
@@ -58,7 +58,7 @@ ul a {
 
 header,
 nav .menu-celular {
-   /* height: 12vh;*/
+    /* height: 12vh;*/
     width: 100%;
     background-color: rgb(28, 28, 28);
     z-index: 3000;
@@ -67,18 +67,40 @@ nav .menu-celular {
 
 
 }
-
-/*nav{
+/*ADENTRO DEL NAV CELULAR*/
+.fa-xmark:hover{
+    color: rgb(165, 165, 165);
+    transition: 0.3s;
+}
+.div-nav H6{
+    font-size: 25px;
+    
+}
+.div-nav p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+    
+}
+.div-nav{
+    color: rgb(120, 120, 120);
+    text-align: center;
+}
+.offcanvas-body, .offcanvas-header{
+    background-color: rgb(28, 28, 28);
+}
+.offcanvas-body{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-   /* padding-top: 20px ;
-    padding-top: 0;
-}*/
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    
+
+}
 .menu-celular img {
     height: 65px;
 }
+
 
 .menu-celular button {
     background-color: rgb(28, 28, 28);
@@ -86,11 +108,13 @@ nav .menu-celular {
     font-size: 30px;
     border: none;
 }
-.offcanvas-body a{
+
+.offcanvas-body a {
     color: rgb(255, 255, 255);
     font-size: 25px;
 }
-.offcanvas-body a:hover{
+
+.offcanvas-body a:hover {
     color: rgb(255, 170, 0);
 }
 
@@ -98,27 +122,14 @@ header .container-fluid {
     height: auto;
 }
 
-
-
-/*/
-.text-body-secondary{
-    height: auto;
-    padding-bottom: 10px;
-
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-items: center;
-
-}*/
+/*FIN NAV ADENTRO*/
 .menu-computadora {
     display: none;
 }
 
 
 .Inicio {
-   height: 95vh;
+    height: 95vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(inicio.jpg);
     background-size: cover;
     background-position: center;
@@ -132,11 +143,12 @@ header .container-fluid {
     overflow: hidden;
     background-attachment: fixed;
 
-    
-    
-  
+
+
+
 
 }
+
 .Inicio::before {
     content: "";
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url(inicio.jpg);
@@ -150,11 +162,13 @@ header .container-fluid {
     transform: translate(0, -10%);
     z-index: -1;
 }
+
 .parallax-content {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 100px 0; /* Ajusta el espacio superior e inferior según sea necesario */
+    padding: 100px 0;
+    /* Ajusta el espacio superior e inferior según sea necesario */
     color: white;
 }
 
@@ -172,17 +186,25 @@ header .container-fluid {
     font-size: 1.1em;
 }
 
-.Inicio button {
-    font-size: 1.2em;
-    height: 50px;
+.Inicio button, .btn-pedir-menu { 
     width: auto;
     background-color: rgb(255, 255, 255, 0);
     color: rgb(255, 170, 0);
     border: 3px solid rgb(255, 170, 0);
     font-weight: 600;
 }
+.Inicio button{
+    font-size: 1.2em;
+    height: 50px;
+}
+.btn-pedir-menu{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
 
-.Inicio button:hover {
+.Inicio button:hover, .btn-pedir-menu:hover {
     background-color: rgb(255, 170, 0);
     color: black;
     transition: 0.3s;
@@ -194,18 +216,23 @@ header .container-fluid {
 iframe {
     width: 85vw;
     height: 25vh;
-    
+    align-self: center;
+
 }
 
 .Nosotros {
     height: auto;
     background-color: rgb(251, 251, 251);
     padding: 30px 25px;
+
+
+}
+
+.info-nosotros {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
-    justify-content: center;
 
 }
 
@@ -220,6 +247,7 @@ iframe {
 .Nosotros p {
     color: rgb(0, 0, 0);
     font-size: 1.3em;
+    text-align: center;
 }
 
 /*MENU*/
@@ -277,9 +305,11 @@ ul li {
     height: auto;
     object-fit: cover;
 }
-.lista-item{
+
+.lista-item {
     padding: 5px;
 }
+
 .lista-item b {
     font-family: 'Paytone One';
     text-transform: uppercase;
@@ -419,13 +449,16 @@ footer i {
     border-radius: 50%;
 }
 
-footer i:hover, footer a:hover {
+footer i:hover,
+footer a:hover {
     transition: 0.3s;
 }
-footer i:hover{
+
+footer i:hover {
     background-color: rgb(255, 170, 0);
 }
-footer a:hover{
+
+footer a:hover {
     color: rgb(255, 170, 0);
 }
 
@@ -455,4 +488,134 @@ footer b {
     color: rgb(120, 120, 120);
     text-align: center;
     font-size: 15px;
+}
+
+@media (min-width: 700px) {
+    .Inicio h1{
+        font-size: 85px;
+    }
+    header .menu-celular {
+        display: none;
+    }
+
+    .menu-computadora {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .menu-computadora ul {
+        padding-top: 20px;
+
+    }
+
+    .menu-computadora ul a {
+        padding-top: 0;
+        padding-right: 20px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+
+    .menu-computadora ul a:hover {
+        color: rgb(255, 170, 0);
+        transition: 0.3s;
+    }
+
+    .menu-computadora img {
+        height: 75px;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .Nosotros iframe {
+        height: 450px;
+
+    }
+
+    /*MENÚ*/
+    .banner-menu h2,
+    .banner-tragos h2 {
+        margin-top: 0;
+        font-size: 2.8em;
+        text-align: center;
+        justify-content: center;
+        padding-top: 10vh;
+
+    }
+    
+    .lista-item{
+        padding: 20px;
+        justify-self: center;
+        width: 800px; /*CAMBIAR WIDTH A LOS 600PX*/
+    }
+    .lista-item ul li{
+        display: block;
+        padding: 10px;
+
+    }
+    .lista-item ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .lista-item ul hr{
+        display: none;
+    }
+    .hamburguesas, .picadas{
+        
+        border-bottom: 1px solid rgb(165, 165, 165);
+    }
+
+    /*SUCURSALES*/
+    .Galeria {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 30px 15px;
+
+    }
+    .Galeria img {
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        margin: 10px;
+        filter: brightness(40%);
+        */
+    }
+    /*CONTACTO*/
+    
+    footer {
+        flex-direction: column;
+    
+    
+    }
+    footer div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    footer div:not(.logofooter){
+        
+    }
+    .contactar, .ubicacion{
+        padding-right: 25px;
+    }
+    .seccion-footer {
+        display: block;
+        align-content: center;
+        
+        
+        
+       
+    }
+    .logofooter {
+        display: block;
+        
+        
+    
+    }
 }
