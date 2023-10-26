@@ -255,7 +255,8 @@ hr{
     /*background-color: #a756bd;*/
     color: white;
     text-align: center;
-    height: 580px;
+    padding-bottom: 25px;
+    height: auto;
     background-image: url(imagenes/fotonosotros.png);
     background-size: cover;
     background-position: center;
@@ -275,7 +276,7 @@ hr{
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 15px;
-    height: 250px;
+    height: auto;
     justify-content: center;  
 }
 
@@ -288,6 +289,14 @@ hr{
     width: 55%;
     padding: 10px;
     
+}
+.presentacion{
+    width: 50%;
+    display: block;
+}
+.presentacion img{
+    height: 350px;
+    width: auto;
 }
 /*.descripcion-nosotros img{
     height: 200px;

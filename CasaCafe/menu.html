@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Café</title>
+    <title>Menú - Casa Café</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,400;1,100&family=Homenaje&family=Overpass:wght@300&display=swap"
         rel="stylesheet">
@@ -17,12 +16,11 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <header>
+    <header class="header-p-menu">
         <img src="" alt="" class="logo">
         <nav class="nav-computadora">
             <ul>
@@ -34,7 +32,7 @@
 
             </ul>
         </nav>
-        <nav class="nav-celular navbar">
+        <nav class="nav-celular navbar nav-p-menu">
 
             <div class="container-fluid">
                 <img src="imagenes/logo.png" alt="">
@@ -63,7 +61,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#sucursales">SUCURSALES</a>
                             </li>
-
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="#contacto">CONTACTO</a>
                             </li>
@@ -89,163 +87,79 @@
             </div>
         </nav>
     </header>
-
-
-    <section class="inicio seccion" id="inicio">
-        <div class="texto-inicio">
-            <h1>Casa Café</h1>
-            <p>Viví una experiencia única, sentite en tu Casa</p>
-        </div>
-        <div class="imagen-inicio">
-            <img src="imagenes/banner1.jpg" alt="">
-        </div>
-    </section>
-
-
-    <section class="nosotros seccion">
-        <h2>Sobre Nosotros</h2>
-        <div class="descripcion-carrusel">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, minus? Obcaecati sunt quisquam harum
-                officiis, expedita culpa doloribus nemo adipisci eos illum sequi eum natus eligendi praesentium quis
-                voluptatum accusamus!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat cupiditate reiciendis, ipsa enim
-                molestiae facere tempore eaque aliquid nulla? Vero temporibus molestiae doloribus earum, voluptatibus
-                adipisci commodi laboriosam quasi? Placeat.</p>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imagenes/compartir.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/banner2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagenes/banner1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
+    <section class="productos-menu seccion">
+        <h2>NUESTRO MENÚ</h2>
+        <div class="filtro-comida">
+            <div class="menu-dulce comida">
+                <h3>Dulce</h3>
+                
+            </div>
+            <div class="productos-lista">
+                <ul>
+                    <li>Medialunas</li>
+                    <li>Croissant</li>
+                    <li>Cheesecake de frutos rojos</li>
+                    <li>Cheese cake de dulce de leche</li>
+                    <li>Brownie con dulce de leche</li>
+                </ul>
             </div>
         </div>
-
-
-        <div class="caracteristicas">
-            <div class="caracteristica">
-                <i class="fa-solid fa-mug-hot icono-nosotros"></i>
-                <h3>Especialidad</h3>
-                <p>Nuestros granos de café provenientes de Brasil y Colombia, son cuidadosamente seleccionados por
-                    nuestros
-                    especialistas.</p>
-            </div>
-
-            <div class="caracteristica">
-                <i class="fa-solid fa-seedling icono-nosotros"></i>
-                <h3>Para todos</h3>
-                <p>Con nuestro amplio menú ofrecemos gran variedad de productos aptos para celíacos y veganos</p>
-            </div>
-            <div class="caracteristica">
-                <i class="fa-solid fa-mug-hot icono-nosotros"></i>
-                <h3>Comodidad</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus.</p>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="menu seccion" id="menu">
-        <h2>Nuestro Menú</h2>
-        <!--Qué comer-->
-        <!--FILTROS-->
-        <button class="boton-menu">Ver menú completo</button>
-
-        <!--DULCE-->
-        <div class="menu-dulce comida hover-index">
-            <h3>Dulce</h3>
-            <div class="opciones-menu">
-                <h4>Tortas · </h4>
-                <h4>Cookies · </h4>
-                <h4>Budines</h4>
-            </div>
-
-        </div>
+        
         <!--SALADO-->
-        <div class="menu-salado comida hover-index">
-            <h3>Salado</h3>
-            <div class="opciones-menu">
-                <h4>Sandwiches · </h4>
-                <h4>Tostadas · </h4>
-                <h4>Ensaladas</h4>
+        <div class="filtro-comida">
+            <div class="menu-salado comida">
+                <h3>Salado</h3>
+                
             </div>
-
-
+            <div class="productos-lista">
+                <ul>
+                    <li>Medialunas</li>
+                    <li>Croissant</li>
+                    <li>Cheesecake de frutos rojos</li>
+                    <li>Cheese cake de dulce de leche</li>
+                    <li>Brownie con dulce de leche</li>
+                </ul>
+            </div>
         </div>
+        
         <!--BEBIDAS-->
-        <div class="menu-bebidas comida hover-index">
-            <form action="https://www.cssmatic.com/es/border-radius">
+        <div class="filtro-comida">
+
+        <div class="menu-bebidas comida">
                 <h3 href="">Cafetería</h3>
-                <div class="opciones-menu">
-                    <h4>Café · </h4>
-                    <h4>Té · </h4>
-                    <h4>Otros</h4>
-                </div>
-            </form>
-
-
+                
         </div>
+        <div class="productos-lista">
+            <ul>
+                <li>Medialunas</li>
+                <li>Croissant</li>
+                <li>Cheesecake de frutos rojos</li>
+                <li>Cheese cake de dulce de leche</li>
+                <li>Brownie con dulce de leche</li>
+            </ul>
+        </div>
+    </div>
+
         <!--PARA COMPARTIR-->
-        <div class="menu-compartir comida hover-index">
-            <h3>Para compartir</h3>
-
+        <div class="filtro-comida">
+            <div class="menu-compartir comida">
+                <h3>Para compartir</h3>
+               
+            </div>
+            <div class="productos-lista">
+                <ul>
+                    <li>Medialunas</li>
+                    <li>Croissant</li>
+                    <li>Cheesecake de frutos rojos</li>
+                    <li>Cheese cake de dulce de leche</li>
+                    <li>Brownie con dulce de leche</li>
+                </ul>
+            </div>
         </div>
-
+        
     </section>
-    <section class="sucursales seccion" id="sucursales">
-        <h2>Nuestras sucursales</h2>
-        <!--Donde visitarnos-->
-        <div class="sucursal">
-            <img src="imagenes/santelmo.jpg" alt="">
-            <h3>San Telmo, CABA</h3>
-            <div class="direccion-sucursal info-sucursal">
-                <i class="fa-solid fa-location-dot"></i><a href="">Carlos Calvo 789</a>
-
-            </div>
-            <div class="hora-sucursal info-sucursal">
-                <i class="fa-regular fa-clock"></i>
-                <p>De 11 a 20hs</p>
-
-            </div>
-        </div>
-        <div class="sucursal">
-            <img src="imagenes/banner1.jpg" alt="">
-            <h3>Palermo, CABA</h3>
-            <div class="direccion-sucursal info-sucursal">
-                <i class="fa-solid fa-location-dot"></i><a href="">San Martín 67</a>
-
-            </div>
-            <div class="hora-sucursal info-sucursal">
-                <i class="fa-regular fa-clock"></i>
-                <p>De 15 a 22hs</p>
-
-            </div>
-        </div>
-        <div class="sucursal">
-            <img src="imagenes/villacrespo.jpg" alt="">
-            <h3>Villa Crespo, CABA</h3>
-            <div class="direccion-sucursal info-sucursal">
-                <i class="fa-solid fa-location-dot"></i><a href="">Belgrano 123</a>
-
-            </div>
-            <div class="hora-sucursal info-sucursal">
-                <i class="fa-regular fa-clock"></i>
-                <p>De 10 a 20hs</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
     <footer class="seccion" id="contacto">
-
+        
         <div class="logo-footer">
             <img src="" alt="">
         </div>
@@ -260,21 +174,18 @@
             <H2>Ubicación</H2>
             <a href="">Carlos Calvo 789</a>
             <a href="">San Martín 67</a>
-            <a href="">Belgrano 123</a>
-        </div>
+            <a href="">Belgrano 123</a>        </div>
         <div class="seccion-footer">
             <h2>Redes Sociales</h2>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-tiktok"></i>
         </div>
-
-
+        
+        
         <div class="copywrite">
             <p>Casa Café 2023 &copy; - Todos los derechos reservados</p>
         </div>
     </footer>
-
 </body>
-
 </html>

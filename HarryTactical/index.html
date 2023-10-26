@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Tactical</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="HTLogo.png" type="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +20,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    const enlacesNavegacion = document.querySelectorAll(".menu-fijo a");
+
+    // Función para detectar la sección actualmente visible en la página
+    function detectarSeccionVisible() {
+        let seccionActual = null;
+
+        for (const enlace of enlacesNavegacion) {
+            const targetId = enlace.getAttribute("href").substring(1);
+            const target = document.getElementById(targetId);
+
+            if (isElementInViewport(target)) {
+                seccionActual = targetId;
+                break;
+            }
+        }
+
+        return seccionActual;
+    }
+
+    // Función para verificar si un elemento está en la vista actual
+    function isElementInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (rect.top >= 0 && rect.bottom <= window.innerHeight);
+    }
+
+    // Función para agregar la clase "active" a la sección de navegación correspondiente
+    function actualizarSeccionActiva() {
+        const seccionVisible = detectarSeccionVisible();
+
+        for (const enlace of enlacesNavegacion) {
+            const targetId = enlace.getAttribute("href").substring(1);
+            if (targetId === seccionVisible) {
+                enlace.classList.add("active");
+            } else {
+                enlace.classList.remove("active");
+            }
+        }
+    }
+
+    // Agregar eventos de scroll para actualizar la sección activa
+    window.addEventListener("scroll", actualizarSeccionActiva);
+
+    // Llamar a la función al cargar la página
+    actualizarSeccionActiva();
+});
+
+        </script>
 
     <header>
         <div class="container navegador">
             <img class="logo" src="HTLogo.png" alt="Harry Tactical">
             <nav class="menu-desplazable">
-                <nav class="">
+                
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -33,7 +83,7 @@
                             
                         </button>
                     </div>
-                </nav>
+                
                 <div class="collapse menu-colapsado" id="navbarToggleExternalContent">
                     <div class="bg p-4">
                         <span class="text-body-secondary">
@@ -102,7 +152,7 @@
                             </li>
                         </ul>
                     </div>
-                    <img src="ifaksolo.png" class="" alt="">
+                    <img src="ifaksolo.png" class="" alt="botiquín ifak camuflado">
 
                     <div class="descripcion2">
                         <ul>
@@ -131,12 +181,12 @@
             <h2>Colores disponibles</h2>
             <div class="elegir-colores">
                 <picture>
-                    <img src="colornegro.jpg" alt="negro">
+                    <img src="colornegro.jpg" alt="color negro">
                     <p>Negro</p>
                 </picture>
 
                 <picture>
-                    <img src="colorcp.jpg" alt="camuflado">
+                    <img src="colorcp.jpg" alt="color camuflado">
                     <p>Camuflado</p>
                 </picture>
             </div>
@@ -211,7 +261,7 @@
             </div>
             <div class="cartas">
                 <div class="card" style="">
-                    <img src="ifakcamuflado.jpg" class="card-img-top" alt="...">
+                    <img src="ifakcamuflado.jpg" class="card-img-top" alt="botiquin ifak camuflado">
                     <div class="card-body">
                         <p>EN STOCK</p>
                         <h5 class="card-title">IFAK BRI-21 CP</h5>
@@ -257,7 +307,7 @@
                     <div class="iconos1">
                         <i class="fa-solid fa-envelope"></i> <a href="">harrybags@gmail.com</a>
                         <br>
-                        <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/1140487510" target="_blank">+54 11 4048-7510</a>
+                        <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+541140487510" target="_blank">+54 11 4048-7510</a>
                         <br>
                         <i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/place/Avellaneda,+Provincia+de+Buenos+Aires/@-34.6613785,-58.3674269,15z/data=!3m1!4b1!4m6!3m5!1s0x95a3335230bd052b:0x9d632a18eea90a31!8m2!3d-34.6610756!4d-58.3669739!16zL20vMDM2eWJx?entry=ttu" target="_blank">Avellaneda, Buenos Aires</a>
                     </div>
@@ -270,7 +320,7 @@
                     </div>
                     <div class="logo-horarios">
                         <p>Horarios de atención <br>Lunes a sábados:<br> de 8 a 20hs</p>
-                        <img src="HTLogo.png" alt="">
+                        <img src="HTLogo.png" alt="harry tactical">
                         <!--LOGO-->
                     </div>
 

@@ -10,20 +10,25 @@
     font-family: 'Paytone One', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    
-   
-    
+
+
+
 }
+
 h3 {
     font-size: 25px;
 }
+
 h4 {
     font-size: 22px;
 }
-H3, H4{
+
+H3,
+H4 {
     font-weight: 600;
     padding: 15px 10px;
 }
+
 button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
     background-color: black;
     padding: 15px;
@@ -32,10 +37,12 @@ button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
     border-radius: 50px;
     font-weight: 800;
 }
-.boton-cerrar{
+
+.boton-cerrar {
     border: none;
 }
-.boton-pedir{
+
+.boton-pedir {
     background-color: rgb(255, 255, 255, 0);
     border: solid 5px rgb(233, 161, 28);
     padding: 15px;
@@ -45,54 +52,65 @@ button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
     border-radius: 50px;
     font-weight: 900;
 }
-p{
+
+p {
     font-size: 18px;
 }
-ul{
-    text-decoration: none;
-}
-a{
+
+ul {
     text-decoration: none;
 }
 
-.sucursal a:not(.takeaway){
+a {
+    text-decoration: none;
+}
+
+.sucursal a:not(.takeaway) {
     color: black;
     font-size: 20px;
     padding: 15px;
 
 }
-header a{
+
+header a {
     color: white;
     font-size: 20px;
 }
+
 header a:hover {
     color: yellow;
     transition: 0.3s;
 }
 
 
-section, footer{
-   
+section,
+footer {
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-items: center;
 
 }
-section{
-    padding: 140px 35px;
+
+section {
+    padding: 120px 35px;
     margin-right: 0;
     height: auto;
 }
-header, footer {
+
+header,
+footer {
     height: auto;
     padding: 30px;
 }
+
 footer {
     background-color: black;
     color: white;
     width: 100%;
 }
+
 header {
     background-color: black;
     height: 12vh;
@@ -103,53 +121,62 @@ header {
 
     position: fixed;
     z-index: 2000;
-    
+
 
 }
 
 /*PARA CELULAR*/
 /*adentro menu*/
-.offcanvas{
+.offcanvas {
     background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
 }
-.offcanvas-body{
+
+.offcanvas-body {
     padding-top: 20px;
 }
-.offcanvas-body ul li{
+
+.offcanvas-body ul li {
     justify-items: center;
     text-align: center;
     padding: 5px 0;
 
 }
-.offcanvas-body ul li a{
+
+.offcanvas-body ul li a {
     color: white;
 }
-.active{
+
+.active {
     color: rgb(233, 161, 28);
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: rgb(233, 161, 28);
 }
-.fa-xmark{
+
+.fa-xmark {
     color: white;
     background-color: transparent;
     font-size: 30px;
     text-align: center;
-    
+
 }
-.fa-xmark:hover{
+
+.fa-xmark:hover {
     transition: 0.3s;
     color: rgb(255, 255, 255, 0.5);
 }
-.abrir-menu{
+
+.abrir-menu {
     background-color: transparent;
     border: none;
-    
+
 }
-.boton-pedir-navbar{
+
+.boton-pedir-navbar {
     align-self: center;
     text-align: center;
     background-color: rgb(233, 161, 28);
@@ -159,57 +186,69 @@ header {
     padding: 15px;
 }
 
-.seguinos-navbar{
+.seguinos-navbar {
     margin-top: 70px;
 }
+
 /*fin adentro del menu*/
 .nav-computadora {
     display: none;
 }
-.fa-bars{
+
+.fa-bars {
     color: white;
     font-size: 30px;
     padding: 20px;
 }
-.nav-celular{
+
+.nav-celular {
     background-color: transparent;
 }
-.nav-celular img{
+
+.nav-celular img {
     height: 100px;
 
 }
+
 /*FOOTER*/
 h2:not(footer h2) {
     color: rgb(0, 0, 0);
     font-weight: 800;
 }
-footer h2{
+
+footer h2 {
     font-family: 'Paytone One', sans-serif;
     font-weight: 400;
     color: rgb(210, 210, 210);
 }
-.divfooter p{
+
+.divfooter p {
     color: rgb(255, 255, 255);
 }
-.divfooter a{
+
+.divfooter a {
     color: rgb(255, 255, 255);
     font-size: 20px;
     box-sizing: border-box;
 }
-.divfooter a:hover{
+
+.divfooter a:hover {
     color: rgb(233, 161, 28);
     transition: 0.3s;
 }
-.divfooter{
+
+.divfooter {
     display: flex;
     flex-direction: column;
     justify-items: center;
     padding-top: 20px;
 }
-.redes{
+
+.redes {
     padding-top: 20px;
 }
-.fa-brands{
+
+.fa-brands {
     background-color: rgb(210, 210, 210);
     border-radius: 50%;
     color: black;
@@ -217,20 +256,23 @@ footer h2{
     font-size: 25px;
     text-align: center;
 }
-.fa-facebook:hover{
+
+.fa-facebook:hover {
     background-color: #0048ff;
     transition: 0.3s;
 }
-.fa-instagram:hover{
-    background-color:  rgb(255, 0, 68);
-    transition: 0.3s;
-}
-.fa-tiktok:hover{
-    background-color:  rgb(0, 242, 255);
+
+.fa-instagram:hover {
+    background-color: rgb(255, 0, 68);
     transition: 0.3s;
 }
 
-.copywrite p{
+.fa-tiktok:hover {
+    background-color: rgb(0, 242, 255);
+    transition: 0.3s;
+}
+
+.copywrite p {
     color: rgb(140, 140, 140);
     font-size: 15px;
     padding-top: 45px;
@@ -239,76 +281,88 @@ footer h2{
 }
 
 
-.producto img{
-    width: 350px; /*    width: 390px; DE SECTION    */
+.producto img {
+    width: 350px;
+    /*    width: 390px; DE SECTION    */
     text-align: center;
     border-radius: 5px;
 
 }
 
 /*Pagina menu*/
-.filtros{
+.filtros {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
 }
-/* Estilo para el botón de filtro activo */
+
 .filtros button.active,
 .filtros button:hover {
     color: black;
     background-color: rgb(233, 161, 28);
-    color: white; /* Cambia el color del texto si es necesario */
+    color: white;
 }
 
-.filtros button{
+.filtros button {
     margin: 5px 5px 5px 0;
     border: none;
 }
-.filtros button:hover{
+
+.filtros button:hover {
     transition: 0.3s;
 }
-.seccion h1{
+
+.seccion h1 {
     text-align: center;
 }
-.filtro h2{
+
+.filtro h2 {
     text-align: center;
     padding: 15px 0;
 }
 
 /*Pagina sucursales*/
-.sucursal{
+.sucursal {
     width: 350px;
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0.3px solid rgb(207, 207, 207);
 
-    box-shadow: 2px 2px 20px  rgb(247, 247, 247);
+    box-shadow: 2px 2px 20px rgb(247, 247, 247);
 }
-.sucursal h3{
+
+.sucursal h3 {
     color: ;
 }
-.sucursal ul{
+
+.sucursal ul {
     align-content: center;
     padding: 0 15px;
 
 }
-.sucursal ul li{
-    display:inline-flex;
+
+.sucursal ul li {
+    display: inline-flex;
     list-style: none;
     align-items: center;
     margin-bottom: 10px;
-    
+
 }
-.sucursal ul li a:not(.takeaway), .sucursal ul li i, .sucursal ul li p{
+
+.sucursal ul li a:not(.takeaway),
+.sucursal ul li i,
+.sucursal ul li p {
     padding: 0;
     display: inline-flex;
     margin-bottom: 0;
 }
-.sucursal ul li i{
+
+.sucursal ul li i {
     padding: 0 10px;
 }
-.takeaway{
+
+.takeaway {
     justify-self: center;
     align-self: center;
     font-weight: 700;
@@ -317,31 +371,78 @@ footer h2{
     padding: 15px;
     margin-left: 85px;
 }
-.sucursal h3{
+
+.sucursal h3 {
     text-align: center;
 }
 
-.sucursal img{
+.sucursal img {
     width: 350px;
     height: 200px;
     object-fit: cover;
+    filter: brightness(85%);
+
+}
+.sucursal:hover{
+    box-shadow: 5px 5px 15px rgb(229, 229, 229);
+    transition: 0.3s;
+}
+.sucursal:hover img{
+    transform:scale(1.03);
+    transition: 0.3s;
+    
 }
 
+
 /*PAGINA NOSOTROS*/
-.caracteristicas{
+.caracteristicas {
     color: rgb(233, 161, 28);
     font-weight: 800;
     font-size: 40px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-.items{
+
+.items {
     padding-top: 15px;
 }
-.bloque{
+
+.bloque {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.nuestra-historia iframe{
+
+.nuestra-historia iframe {
     padding-top: 20px;
+}
+
+@media (min-width:720px) {
+    /*pagina menu*/
+    .menu-completo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .titulo-filtro{
+        text-align: center;
+    }
+    .cuerpo-filtro{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    /*pagina nosotros*/
+    .nuestra-historia iframe{
+        height: 450px;
+    }
+    /*pagina sucursales*/
+    .sucursales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }

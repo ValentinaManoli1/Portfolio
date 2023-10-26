@@ -20,6 +20,37 @@
     <link rel="stylesheet" href="secciones.css">
 </head>
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const botonesFiltro = document.querySelectorAll(".filtros button");
+        const elementosMenu = document.querySelectorAll(".filtro");
+    
+        botonesFiltro.forEach(function (boton) {
+            boton.addEventListener("click", function () {
+                // Remover la clase 'active' de todos los botones
+                botonesFiltro.forEach(function (btn) {
+                    btn.classList.remove("active");
+                });
+    
+                // Agregar la clase 'active' al botón actual
+                boton.classList.add("active");
+    
+                const categoriaSeleccionada = boton.getAttribute("data-category");
+    
+                elementosMenu.forEach(function (elemento) {
+                    const categoriaElemento = elemento.getAttribute("data-category");
+    
+                    if (categoriaSeleccionada === "todos" || categoriaSeleccionada === categoriaElemento) {
+                        elemento.style.display = "block";
+                    } else {
+                        elemento.style.display = "none";
+                    }
+                });
+            });
+        });
+    });
+    
+    </script>
     <header class="inicio">
         <nav class="nav-computadora">
             <ul>
@@ -86,139 +117,105 @@
     </header>
     <section class="seccion">
         <h1>Nuestro Menú</h1>
-        <div class="filtros">
-            <button data-category="todos">Todos</button>
-            <button data-category="hamburguesas">Hamburguesas</button>
-            <button data-category="acompanamiento">Acompañamiento</button>
-            <button data-category="combos">Combos</button>
-        </div>
-        <div class="hamburguesas filtro" data-category="hamburguesas">
-            <h2>HAMBURGUESAS</h2>
-            <div class="hamburguesa-1 hamburguesa producto">
-                <img src="imagenes/hamburguesa1.jpg" alt="">
-                <h3>Hamburguesa 1</h3>
-                <p>Descripción...</p>
+        <div class="menu-completo">
+            <div class="filtros">
+                <button data-category="todos">Todos</button>
+                <button data-category="hamburguesas">Hamburguesas</button>
+                <button data-category="acompanamiento">Acompañamiento</button>
+                <button data-category="combos">Combos</button>
             </div>
-            <div class="hamburguesa-2 hamburguesa producto">
-                <img src="imagenes/hamburguesa2.jpg" alt="">
-                <h3>Hamburguesa 2</h3>
-                <p>Descripción...</p>
+            <div class="hamburguesas filtro" data-category="hamburguesas">
+                <div class="titulo-filtro">                <h2>HAMBURGUESAS</h2>
+                </div>
+                <div class="cuerpo-filtro">
+                    <div class="hamburguesa-1 hamburguesa producto">
+                        <img src="imagenes/hamburguesa1.jpg" alt="">
+                        <h3>Hamburguesa 1</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-2 hamburguesa producto">
+                        <img src="imagenes/hamburguesa2.jpg" alt="">
+                        <h3>Hamburguesa 2</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-3 hamburguesa producto">
+                        <img src="imagenes/hamburguesa3.jpg" alt="">
+                        <h3>Hamburguesa 3</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-4 hamburguesa producto">
+                        <img src="imagenes/hamburguesa3.jpg" alt="">
+                        <h3>Hamburguesa 4</h3>
+                        <p>Descripción...</p>
+                    </div>
+                </div>
+                
+                
             </div>
-            <div class="hamburguesa-3 hamburguesa producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Hamburguesa 3</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-4 hamburguesa producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Hamburguesa 4</h3>
-                <p>Descripción...</p>
+            <div class="acompañamiento filtro" data-category="acompanamiento">
+                <div class="titulo-filtro">
+                    <h2>ACOMPAÑAMIENTO</h2>
+
+                </div>
+                <div class="cuerpo-filtro">
+                    <div class="hamburguesa-1 bebida producto">
+                        <img src="imagenes/hamburguesa1.jpg" alt="">
+                        <h3>Bebida 1</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-2 bebida producto">
+                        <img src="imagenes/hamburguesa2.jpg" alt="">
+                        <h3>Bebida 2</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-3 bebida producto">
+                        <img src="imagenes/hamburguesa3.jpg" alt="">
+                        <h3>Bebida 3</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-4 bebida producto">
+                        <img src="imagenes/hamburguesa3.jpg" alt="">
+                        <h3>Bebida 4</h3>
+                        <p>Descripción...</p>
+                    </div>
+                </div>
+                
+                
             </div>
             
+            <div data-category="combos" class="combos filtro">
+                <div class="titulo-filtro">
+                    <h2>COMBOS</h2>
+
+                </div>
+                <div class="cuerpo-filtro">
+                    <div class="hamburguesa-1 combo producto" >
+                        <img src="imagenes/hamburguesa1.jpg" alt="">
+                        <h3>Combo 1</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-2 combo producto">
+                        <img src="imagenes/hamburguesa2.jpg" alt="">
+                        <h3>Combo 2</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-3 combo producto">
+                        <img src="imagenes/hamburguesa3.jpg" alt="">
+                        <h3>Combo 3</h3>
+                        <p>Descripción...</p>
+                    </div>
+                    <div class="hamburguesa-4 combo producto">
+                        <img src="imagenes/hamburguesa3.jpg" alt="">
+                        <h3>Combo 4</h3>
+                        <p>Descripción...</p>
+                    </div>
+                </div>
+                
+                
+            </div>
         </div>
-        <div class="acompañamiento filtro" data-category="acompanamiento">
-            <h2>ACOMPAÑAMIENTO</h2>
-            <div class="hamburguesa-1 bebida producto">
-                <img src="imagenes/hamburguesa1.jpg" alt="">
-                <h3>Bebida 1</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-2 bebida producto">
-                <img src="imagenes/hamburguesa2.jpg" alt="">
-                <h3>Bebida 2</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-3 bebida producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Bebida 3</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-4 bebida producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Bebida 4</h3>
-                <p>Descripción...</p>
-            </div>
-            
-        </div>
-        <div class="bebidas filtro">
-            <h2>BEBIDAS</h2>
-            <div class="hamburguesa-1 hamburguesa producto">
-                <img src="imagenes/hamburguesa1.jpg" alt="">
-                <h3>Hamburguesa 1</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-2 hamburguesa producto">
-                <img src="imagenes/hamburguesa2.jpg" alt="">
-                <h3>Hamburguesa 2</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-3 hamburguesa producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Hamburguesa 3</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-4 hamburguesa producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Hamburguesa 4</h3>
-                <p>Descripción...</p>
-            </div>
-            
-        </div>
-        <div data-category="combos" class="combos filtro">
-            <h2>COMBOS</h2>
-            <div class="hamburguesa-1 combo producto" >
-                <img src="imagenes/hamburguesa1.jpg" alt="">
-                <h3>Combo 1</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-2 combo producto">
-                <img src="imagenes/hamburguesa2.jpg" alt="">
-                <h3>Combo 2</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-3 combo producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Combo 3</h3>
-                <p>Descripción...</p>
-            </div>
-            <div class="hamburguesa-4 combo producto">
-                <img src="imagenes/hamburguesa3.jpg" alt="">
-                <h3>Combo 4</h3>
-                <p>Descripción...</p>
-            </div>
-            
-        </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const botonesFiltro = document.querySelectorAll(".filtros button");
-    const elementosMenu = document.querySelectorAll(".filtro");
+        
 
-    botonesFiltro.forEach(function (boton) {
-        boton.addEventListener("click", function () {
-            // Remover la clase 'active' de todos los botones
-            botonesFiltro.forEach(function (btn) {
-                btn.classList.remove("active");
-            });
-
-            // Agregar la clase 'active' al botón actual
-            boton.classList.add("active");
-
-            const categoriaSeleccionada = boton.getAttribute("data-category");
-
-            elementosMenu.forEach(function (elemento) {
-                const categoriaElemento = elemento.getAttribute("data-category");
-
-                if (categoriaSeleccionada === "todos" || categoriaSeleccionada === categoriaElemento) {
-                    elemento.style.display = "block";
-                } else {
-                    elemento.style.display = "none";
-                }
-            });
-        });
-    });
-});
-
-</script>
     </section>
 
     <footer class="final">

@@ -23,13 +23,19 @@ H3, H4{
     font-weight: 600;
     padding: 15px 10px;
 }
-button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
+.boton-general {
     background-color: black;
+    border: none;
     padding: 15px;
     font-size: 15px;
     color: white;
     border-radius: 50px;
     font-weight: 800;
+    margin-left: 10px;
+}
+.boton-general:hover{
+
+    box-shadow: 10px 10px 25px -22px rgba(0,0,0,0.95);    transition: 0.3s;
 }
 .boton-cerrar{
     border: none;
@@ -83,9 +89,7 @@ section, footer{
     justify-items: center;
 
 }
-section{
-    width: 350px;
-}
+
 header, section, footer {
     height: auto;
     padding: 30px;
@@ -188,12 +192,21 @@ header {
 }
 
 .general img{
-    width: 350px; /*    width: 390px; DE SECTION    */
+    height: 200px;
+    width: auto; /*    width: 390px; DE SECTION    */
     text-align: center;
     border-radius: 5px;
 
 }
-
+ section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 0;
+    width: auto;
+ }
 
 .general div {
     padding-bottom: 20px;
@@ -287,4 +300,33 @@ header {
     padding-top: 45px;
     text-align: center;
     margin-bottom: 0;
+}
+
+@media (min-width:720px) {
+    section:not(.sucursales-section){
+        flex-direction: row;
+        
+        
+    }
+    .sucursales-section{
+        display: block;
+    }
+    .sucursales{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .general{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+    .general div:not(.menu){
+        margin-left: 10px;
+    }
+    
+
+
 }
