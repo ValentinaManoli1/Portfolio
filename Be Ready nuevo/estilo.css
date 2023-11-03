@@ -45,7 +45,7 @@ ul li a{
 ul li{
     list-style: none;
 }
-.fa-brands{
+.fa-brands, .fa-regular{
     font-size: 25px;
     border-radius: 50px;
 }
@@ -60,7 +60,7 @@ ul li{
 .fa-brands:not(.fa-whatsapp, .fa-envelope){
     font-size: 30px;
     border-radius: 50px;
-    background-color: #2c8b88;
+    background-color: #25716f;
     padding: 15px;
     color: rgb(247, 247, 248);
 }
@@ -70,6 +70,7 @@ ul li{
 }
 
 /*NAV CELULAR*/
+
 .nav-computadora{
     display: none;
 }
@@ -80,6 +81,7 @@ ul li{
     justify-content: space-between;
     position: fixed;
     z-index: 2000;
+
 }
 .nav-celular img{
     font-size: 30px;
@@ -101,10 +103,27 @@ ul li{
     justify-content: space-around;
     
 }
+.offcanvas-header button{
+    background-color: transparent;
+    border: none;
+}
+.offcanvas-header i{
+    font-size: 30px;
+    color: rgb(247, 247, 248);
+}
+.offcanvas-header i:hover{
+    transition: 0.3s;
+    color: #2c8b88;
+}
+.offcanvas-header img{
+    width: 80px;
+    height: auto;
+}
 .nav-link, .seguinos{
     font-size: 20px;
     font-family: 'Lato';
     color: white;
+    padding-bottom: 15px;
 }
 .nav-link:hover{
     transition: 0.3s;
@@ -122,6 +141,10 @@ ul li{
     color: #1b5a58;
     font-weight: 600;
     background-color: #DFA3EF;
+}
+.boton-hablemos:hover{
+    transition: 0.3s;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.20);
 }
 .redes-navbar{
     margin-bottom: 30px;
@@ -195,6 +218,7 @@ ul li{
     width: 350px;
     height: auto;
 }
+
 .items-lista{
     font-size: 25px;
     font-weight: 700;
@@ -202,23 +226,30 @@ ul li{
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color: #33a7a5;
-    /**text-shadow: 0.5px 0.5px 0.5px rgb(4, 4, 4);*/
-    letter-spacing: 3px;
+    text-shadow: 5px 2px 6px rgba(0,0,0,0.10);
+    margin-bottom: 0;
 }
+
 .items-lista i{
     padding-right: 5px;
 }
 .nosotros ul{
     padding-left: 0;
-}
-.nosotros ul li{
-    padding: 10px 0;
-}
+    padding-top: 20px;
 
+}
+.nosotros ul li:not(.item4){
+    padding: 15px 0;
+
+}
+.item4{
+    padding-top: 15px;
+    padding-bottom: 0;
+}
 /*CURSOS*/
 .cursos{
     background-color: #33a7a5;
-   /* background-image:  linear-gradient(0deg rgba(0,0,0,0.65) ), url(imagenes/patron.png);*/
+   background-image: url(imagenes/patronbyn.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,9 +269,15 @@ ul li{
     background-color: transparent;
     border-radius: 50px;
     color: rgb(247, 247, 248);
-    border: 3px solid rgb(247, 247, 248);
+    border: 4px solid rgb(247, 247, 248);
     width: 150px;
+    font-size: 18px;
     
+}
+.cursos button:hover{
+    transition: 0.3s;
+    background-color: rgb(247, 247, 248);
+    color: #33a7a5;
 }
 
 /*PREGUNTAS*/
@@ -249,6 +286,8 @@ ul li{
 }
 .accordion-item h2 button{
     font-size: 22px;
+    font-weight: 550;
+    color: rgb(77, 77, 77);
 }
 .accordion-body{
     font-size: 20px;
@@ -258,15 +297,26 @@ ul li{
     background-color: #33a7a5;
     color: rgb(247, 247, 248);
     text-align: center;
+    
 
 }
 .contacto h3{
+    padding-top: 20px;
+    text-shadow: 3px 3px 3px #25716f;
+}
+.div-contacto{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: left;
 }
 .contacto a:not(.hechopor){
     color: rgb(247, 247, 248);
 }
-.contactanos{
+.fa-whatsapp, .fa-envelope-open, .fa-location-dot{
+    margin-right: 10px;
 }
+
 .contacto img{
     width: 180px;
     height: auto;
