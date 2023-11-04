@@ -77,14 +77,18 @@ ul li{
 .nav-celular{
     width: 100%;
     height: 10vh;
-    background-color: rgb(14, 144, 133, 0);
+    background-color: #33a7a5;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     position: fixed;
+    flex-wrap: nowrap;
     z-index: 2000;
 
 }
-.nav-celular img{
-    font-size: 30px;
+.logo-nav{
+    width: 70px;
+    height: auto;
 }
 .abrir-menu{
     background-color: transparent;
@@ -162,6 +166,7 @@ ul li{
     justify-content: center;
     align-items: center;
     justify-items: center;
+    background-attachment: fixed;
 }
 /*CAJAS*/
 .caja p{
@@ -211,7 +216,7 @@ ul li{
     justify-items: center;
     align-items: center;
 }
-.seccion p:not(.items-lista){
+.seccion p:not(.items-lista, .p-copywrite){
     font-size: 20px;
 }
 .nosotros img{
@@ -224,10 +229,22 @@ ul li{
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    color: #33a7a5;
+    text-align: left;
+    color: #71c436;
     text-shadow: 5px 2px 6px rgba(0,0,0,0.10);
     margin-bottom: 0;
+}
+.item-nosotros p{
+    margin-bottom: 0;
+}
+.item-nosotros{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.item-nosotros.mostrar {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .items-lista i{
@@ -266,7 +283,7 @@ ul li{
     font-family: 'Lato';
     font-weight: 600;
     padding: 15px;
-    background-color: transparent;
+    background-color: #33a7a5;
     border-radius: 50px;
     color: rgb(247, 247, 248);
     border: 4px solid rgb(247, 247, 248);
@@ -300,7 +317,7 @@ ul li{
     
 
 }
-.contacto h3{
+.contacto h3, .cursos h3{
     padding-top: 20px;
     text-shadow: 3px 3px 3px #25716f;
 }
@@ -309,12 +326,17 @@ ul li{
     flex-direction: column;
     font-size: 20px;
     text-align: left;
+    align-items: center;
 }
 .contacto a:not(.hechopor){
     color: rgb(247, 247, 248);
 }
 .fa-whatsapp, .fa-envelope-open, .fa-location-dot{
     margin-right: 10px;
+}
+iframe{
+    width: max-content;
+    height: auto;
 }
 
 .contacto img{
