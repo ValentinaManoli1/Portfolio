@@ -28,7 +28,7 @@ h3{
     font-family: 'Josefin Sans', sans-serif;
 
 }
-h4{
+h4, h5{
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -55,7 +55,12 @@ ul li{
     border-radius: 20px;
 }
 .seccion{
-    padding: 30px 20px;
+    padding-top: 30px;
+    padding-left:  20px;
+    padding-right:  20px;
+}
+.seccion:not(.por-que){
+    padding-bottom: 30px;
 }
 .fa-brands:not(.fa-whatsapp, .fa-envelope){
     font-size: 30px;
@@ -201,7 +206,18 @@ ul li{
     background-color: #33a7a5;
     
 }
-
+/*POR QUE NOSOTROS*/
+.porque-beready{
+    
+    background-color: rgb(113, 196, 54, 0.35);
+    padding: 20px;
+    border-radius: 8px;
+}
+.caracteristica-pq h5{
+    border-left: solid 3px #2c8b88;
+    padding-left: 5px;
+    color: #2c8b88;
+}
 /*SOBRE NOSOTROS*/
 .secciones-violeta{
     padding: 0;
@@ -219,6 +235,7 @@ ul li{
 .seccion p:not(.items-lista, .p-copywrite){
     font-size: 20px;
 }
+
 .nosotros img{
     width: 350px;
     height: auto;
@@ -233,6 +250,8 @@ ul li{
     color: #71c436;
     text-shadow: 5px 2px 6px rgba(0,0,0,0.10);
     margin-bottom: 0;
+
+    
 }
 .item-nosotros p{
     margin-bottom: 0;
