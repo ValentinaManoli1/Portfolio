@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 h1, h2{
     font-family: 'Beyond the mountains';
 
@@ -17,7 +18,6 @@ h2{
     text-align: left;
     font-weight: 200;
     font-size: 40px;
-    text-shadow: 3px 3px 3px rgb(4, 4, 4);
     margin-left: 10px;
 }
 h3{
@@ -49,15 +49,27 @@ ul li{
     font-size: 25px;
     border-radius: 50px;
 }
-.boton-curso{
-    background-color: ;
+.filtro-curso-btn{
+    border-radius: 50px;
+    color: rgba(38, 138, 136);
+    border:  solid 3px rgba(38, 138, 136);
+    background-color: rgb(255, 255, 255);
+    font-weight: 550;
     text-transform: uppercase;
-    border-radius: 20px;
+    font-family: 'Josefin Sans';
+    padding: 15px;
+    margin: 10px 3px;
+}
+.filtro-curso-btn:hover{
+    background-color: rgba(38, 138, 136);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 .seccion{
-    padding-top: 30px;
     padding-left:  20px;
     padding-right:  20px;
+
+    
 }
 .seccion:not(.por-que){
     padding-bottom: 30px;
@@ -158,72 +170,6 @@ ul li{
 .redes-navbar{
     margin-bottom: 30px;
 }
-/*INICIO*/
-.inicio{
-    padding-top: 150px;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65) ), url(imagenes/20230628_141810.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    background-attachment: fixed;
-}
-/*CAJAS*/
-.caja p{
-    margin-bottom: 0;
-}
-.caja i{
-    font-size: 50px;
-    padding-bottom: 10px;
-    text-shadow: 3px purple;
-    
-}
-.caja{
-    color: #773689;
-    padding: 25px;
-    text-align: center;
-}
-.caja1{
-    background-color: #D27EE9; 
-}
-.caja2{
-    background-color: #DFA3EF;
-}
-.caja3{
-    background-color: #ECC8F6;
-}
-.caja4{
-    background-color: #F2DAF9;
-}
-.caja:hover {
-    transition: 0.4s;
-    color: white;
-    background-color: #33a7a5;
-    
-}
-/*POR QUE NOSOTROS*/
-.porque-beready{
-    
-    background-color: rgb(113, 196, 54, 0.35);
-    padding: 20px;
-    border-radius: 8px;
-}
-.caracteristica-pq h5{
-    border-left: solid 3px #2c8b88;
-    padding-left: 5px;
-    color: #2c8b88;
-}
-/*SOBRE NOSOTROS*/
-.secciones-violeta{
-    padding: 0;
-    margin: 0;
-    background-color: rgb(247, 247, 248);
-}
 .seccion{
     display: flex;
     flex-direction: column;
@@ -236,61 +182,43 @@ ul li{
     font-size: 20px;
 }
 
-.nosotros img{
-    width: 350px;
-    height: auto;
-}
+/*CUERPO */
 
-.items-lista{
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: left;
-    color: #71c436;
-    text-shadow: 5px 2px 6px rgba(0,0,0,0.10);
-    margin-bottom: 0;
-
+.titulo-cursos{
+    background-color: rgb(246, 252, 252);
+    width: 100%;
+    padding-top: 15vh;
     
-}
-.item-nosotros p{
-    margin-bottom: 0;
-}
-.item-nosotros{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-.item-nosotros.mostrar {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.items-lista i{
-    padding-right: 5px;
-}
-.nosotros ul{
-    padding-left: 0;
-    padding-top: 20px;
 
 }
-.nosotros ul li:not(.item4){
-    padding: 15px 0;
+.titulo-curso{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 35px;
+    padding-top: 25px;
+    color: #33a7a5;
+}
+.boton-volver{
+    padding: 15px;
 
 }
-.item4{
-    padding-top: 15px;
-    padding-bottom: 0;
+.boton-volver a{
+    font-family: 'Lato';
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #919191;
+    font-size: 18px;
+    align-items: left;
 }
-/*CURSOS*/
-.cursos{
-    background-color: #33a7a5;
-   background-image: url(imagenes/patronbyn.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgb(247, 247, 248);
-    justify-content: center;
+.boton-volver a i{
+    padding-right: 7px;
+}
+.filtro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left:  20px;
+    padding-right:  20px;
 }
 .botones-cursos{
     display: flex;
@@ -303,19 +231,18 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     font-family: 'Lato';
     font-weight: 600;
     padding: 15px;
-   /* background-color: rgba(63, 99, 98, 0.85);*/
-   background-color: rgba(38, 138, 136, 0.7);
+   background-color: rgb(250, 250, 250);
    border-radius: 8px;
-    color: rgb(247, 247, 248);
-    /*border: 4px solid rgb(247, 247, 248);*/
-    border: none;
+    color: rgb(72, 72, 72);
+    border: solid 1px  rgb(220, 220, 220);
     width: 320px;
     height: auto;
-   /* font-size: 25px;*/
     margin-top: 20px;
+    margin-right: 0;
     
 }
 .div-curso h2{
@@ -323,59 +250,33 @@ ul li{
     font-weight: 500;
     margin: 10px;
 }
-.div-curso p{
+.div-curso p, .div-curso ul li{
     font-weight: 400;
     margin: 10px;
+    font-size: 20px;
 
 }
-.div-curso button{
-    border-radius: 7px;
-    color: rgba(38, 138, 136);
-    font-weight: 600;
-    border: none;
-    text-transform: none;
-    padding: 10px;
-    margin-top: 10px;
-}/*
-.div-curso:hover{
-    transition: 0.3s;
-    background-color: rgb(247, 247, 248);
-    color: #33a7a5;
-}*/
-.curso-online button{
-    background-color: #deffee;
+.div-curso ul{
+    padding-left: 0;
+}
 
-}
-.curso-presencial button{
-    background-color: #f1d6ff;
-}
-.curso-semipresencial button{
-    background-color: #ccfaaa;
-}
 .div-tipo-curso{
     border-radius: 50px;
     background-color: transparent;
     padding: 10px 15px;
     line-height: 20px;
     font-weight: 500;
-    border: solid 1.2px rgb(247, 247, 248);
-    color: rgb(247, 247, 248);
+    border: solid 1.2px #813d93;
+    color: #813d93;
+}
+
+.curso-presencial h2{
+    color: #813d93;
 }
 
 
-/*PREGUNTAS*/
-.preguntas{
-height: auto;
-}
-.accordion-item h2 button{
-    font-size: 22px;
-    font-weight: 550;
-    color: rgb(77, 77, 77);
-}
-.accordion-body{
-    font-size: 20px;
-}
-/*CONTACTO*/
+
+/*FOOTER*/
 .contacto{
     background-color: #33a7a5;
     color: rgb(247, 247, 248);
@@ -419,3 +320,4 @@ iframe{
     font-size: 15px;
     color: #25716f;
 }
+
