@@ -39,6 +39,8 @@ H3, H4{
 }
 .boton-cerrar{
     border: none;
+    background-color: transparent;
+
 }
 .boton-pedir{
     background-color: rgb(255, 255, 255, 0);
@@ -193,7 +195,8 @@ header {
 
 .general img{
     height: 200px;
-    width: auto; /*    width: 390px; DE SECTION    */
+    width: 100%;
+    object-fit: cover;
     text-align: center;
     border-radius: 5px;
 
@@ -211,13 +214,14 @@ header {
 .general div {
     padding-bottom: 20px;
     border-radius: 5px;
+    margin-right: 10px;
     
 }
 .nuestra-historia{
     background-color: rgb(233, 161, 28, 0.8);
     
 }
-.nuestra-historia h3, .nuestra-historia p{
+.general-div h3, .general-div p{
     padding: 20px;
 }
 
@@ -303,6 +307,10 @@ header {
 }
 
 @media (min-width:720px) {
+    h1{
+        font-size: 80px;
+
+    }
     section:not(.sucursales-section){
         flex-direction: row;
         
@@ -315,6 +323,7 @@ header {
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     
     .general{
@@ -324,7 +333,7 @@ header {
 
     }
     .general div:not(.menu){
-        margin-left: 10px;
+        /*margin-left: 10px;*/
     }
     
 

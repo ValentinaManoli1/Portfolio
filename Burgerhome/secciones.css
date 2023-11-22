@@ -40,6 +40,7 @@ button:not(.boton-pedir, .boton-pedir-navbar, .abrir-menu) {
 
 .boton-cerrar {
     border: none;
+    background-color: transparent;
 }
 
 .boton-pedir {
@@ -203,6 +204,7 @@ header {
 
 .nav-celular {
     background-color: transparent;
+    margin-top: -20px;
 }
 
 .nav-celular img {

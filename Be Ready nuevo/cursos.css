@@ -293,6 +293,40 @@ ul li{
     height: 240px;
     object-fit: cover;
 }
+.descripcion-curso ul{
+    padding-left: 0;
+    justify-items: center;
+}
+.item-caracteristica{
+    justify-items: center;
+    text-align: center;
+}
+.item-caracteristica h4, .item-caracteristica i{
+    color: #813d93;
+    text-align: center;
+    margin: 5px;
+
+}
+.item-caracteristica i{
+    font-size: 50px;
+    align-self: center;
+    background-color: #f1d6ff;
+    border-radius: 50px;
+    padding: 15px;
+}
+.local h5{
+    text-transform: none;
+    color:#71c436;
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: solid 4px #71c436;
+}
+.local h6{
+    color: rgb(100, 100, 50);
+    font-size: 18px;
+    font-weight: 700;
+}
+
 
 
 /*FOOTER*/
