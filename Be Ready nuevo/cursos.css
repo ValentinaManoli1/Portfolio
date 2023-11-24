@@ -195,8 +195,9 @@ ul li{
     /*text-transform: uppercase;*/
     font-weight: 400;
     font-size: 35px;
-    padding-top: 25px;
-    color: #33a7a5;
+    padding: 25px;
+    color: #ffffff;
+    background-color: #33a7a5ba;
     text-align: center;
     margin: 0;
 }
@@ -204,6 +205,8 @@ ul li{
     padding: 0 25px;
     color: rgb(100, 100, 100);
     text-align: center;
+
+    display: none; /*VER ESTPOOOOOO*/
 }
 .boton-volver{
     padding: 15px;
@@ -287,11 +290,18 @@ ul li{
     margin-bottom: 30px;
     background-color: rgb(247, 247, 248);
     border-radius: 7px;
+
+    background-image: linear-gradient(0deg, rgb(0 0 0 / 43%), rgba(0,0,0,0.65) ), url(imagenes/bsas.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .info-curso img{
     width: 100%;
     height: 240px;
     object-fit: cover;
+
+    /*VER ESTOOOOOOOOO*/
+    display: none;
 }
 .descripcion-curso ul{
     padding-left: 0;
@@ -300,17 +310,25 @@ ul li{
 .item-caracteristica{
     justify-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .item-caracteristica h4, .item-caracteristica i{
-    color: #813d93;
+    color: hsl(299deg 77% 76%);
     text-align: center;
     margin: 5px;
+    text-shadow: 4px 4px 7px rgb(10 10 10 / 60%);
+    margin: 5px;
 
+}
+.item-caracteristica p{
+    display: none;
 }
 .item-caracteristica i{
     font-size: 50px;
     align-self: center;
-    background-color: #f1d6ff;
+   /* background-color: #f1d6ff;*/
     border-radius: 50px;
     padding: 15px;
 }
