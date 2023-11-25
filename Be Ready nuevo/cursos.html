@@ -101,20 +101,20 @@
 
     </div>
     <div class="filtro">
-        <button class="filtro-curso-btn" data-category="todo">Todo</button>
-        <button class="filtro-curso-btn" data-category="virtual">Virtual</button>
-        <button class="filtro-curso-btn" data-category="presencial">Presencial</button>
-        <button class="filtro-curso-btn" data-category="semipresencial">Semipresencial</button>
+        <form action="#todo"><button class="filtro-curso-btn" data-category="todo">Todo</button></form>
+        <form action="#virtual"><button class="filtro-curso-btn" data-category="virtual">Virtual</button></form>
+        <form action="#presencial"><button class="filtro-curso-btn" data-category="presencial">Presencial</button></form>
+        <form action="#semipresencial"><button class="filtro-curso-btn" data-category="semipresencial">Semipresencial</button></form>
     </div>
     <section class="seccion oferta-cursos">
         <div class="botones-cursos filtro-curso">
-            <div class="filtro-presencial info-curso">
+            <div class="filtro-presencial info-curso" id="presencial">
                     <img src="imagenes/bsas.jpg" alt="">
 
                     <h2 class="titulo-curso">Cursos presenciales</h2>
                 
                 <div class="cuerpo">
-                    <p>                    Asistí presencialmente en Buenos Aires y Mendoza
+                    <p>                    Buenos Aires o Mendoza
                     </p>
                 </div>
                 <div class="descripcion-curso">
@@ -122,67 +122,124 @@
                         <li class="item-caracteristica">
                             <i class="fa-regular fa-clock"></i>
                         <h4>2 horas semanales</h4>
-                        <p>Consecutivas en el mismo día</p>
                         </li>
                         <li class="item-caracteristica">
                             <i class="fa-solid fa-users-rectangle"></i>
                             <h4>Grupos reducidos</h4>
-                            <p>Para garantizar un mejor aprendizaje</p>
                         </li>
                         <li class="item-caracteristica">
                             <i class="fa-solid fa-swatchbook"></i>
                             <h4>Todos los niveles</h4>
-                            <p>Ya que nos adaptamos a tus necesidades</p>
                         </li>
                         <li class="item-caracteristica">
                             <i class="fa-regular fa-calendar-check"></i>
-                            <h4>Feriados</h4>
-                            <p>Con clases digitalizadas para seguir aprendiendo</p>
+                            <h4>Feriados con clases digitales</h4>
+                        </li>
+                        <li>
+                            <p>Nuestros <b>cursos presenciales</b> constan de <b>dos horas</b> semanales consecutivas en el mismo día en la sede elegida (Buenos Aires o Mendoza). Además, los grupos están conformados por 12 personas como máximo, para garantizar un aprendizaje óptimo en cada alumno.
+                              <br>  A la hora de inscribirte, <b>el nivel no es una limitación</b> ya que nos adaptamos a las necesidades de nuestros alumnos. Por eso trabajamos con material personalizado y hacemos el seguimiento adecuado para hacer un ajuste en el contenido si es necesario, e identificar cualquier tipo de dificultad. En Be Ready vas a aprender <b>incluso los días feriados</b>, ya que en esos casos seguimos aprendiendo con clases digitalizadas.
+                        </p>
                         </li>
                     </ul>
                     <div class="locales-presencial">
                         <ul>
                             <li>
-                                <div class="local">
+                                <div class="local local-bsas" >
                                     <h5>Avellaneda, Buenos Aires</h5>
                                     <form action=""><a href="">Ver Ubicación</a></form>
-                                    <div class="info-local">
-                                        <h6>Niños (de 5 a 11 años)</h6>
-                                        <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
-                                        <h6>Adolescentes (de 12 a 18 años)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
-                                    </div>
+                                
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button acordeon-boton acordeon-bsas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <h6>Niños (de 5 a 11 años)</h6>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button acordeon-boton acordeon-bsas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                <h6>Adolescentes (de 12 a 18 años)</h6>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
                                 </div>
                                 
                                 
                             </li>
                             <li>
-                                <div class="local">
+                                <div class="local local-mendoza">
                                     <h5>San Rafael, Mendoza</h5>
                                     <form action=""><a href="">Ver Ubicación</a></form>
                                     <div class="info-local">
-                                        <h6>Niños (de 5 a 11 años)</h6>
-                                        <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
-                                        <h6>Adolescentes (de 12 a 17 años)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
-                                        <h6>Adultos (de 18 años en adelante)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adultos están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button acordeon-boton acordeon-mendoza collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    <h6>Niños (de 5 a 11 años)</h6>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button acordeon-boton acordeon-mendoza collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                                    <h6>Adolescentes (de 12 a 17 años)</h6>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button acordeon-boton acordeon-mendoza collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                                      <h6>Adultos (de 18 años en adelante)</h6>
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                      <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                          </div>
+                                       
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <button>Incribirme</button>
+                <button class="inscribirme">Incribirme</button>
 
             </div>
 
-            <div class="filtro-semipresencial info-curso">
+            <div class="filtro-semipresencial info-curso" id="semipresencial">
                 <img src="imagenes/bsas.jpg" alt="">
 
                 <h2 class="titulo-curso">Cursos semipresenciales</h2>
                 <div class="cuerpo">
-                    <p>                    Asistí una hora virtual y otra presencial en Buenos Aires o Mendoza
+                    <p>                  Buenos Aires o Mendoza / Zoom
                     </p>
                 </div>
                 <div class="descripcion-curso">
@@ -205,53 +262,114 @@
                         </li>
                         <li class="item-caracteristica">
                             <i class="fa-regular fa-calendar-check"></i>
-                            <h4>Feriados</h4>
+                            <h4>Feriados con clases digitales</h4>
                             <p>Con clases digitalizadas para seguir aprendiendo</p>
+                        </li>
+                        <li>
+                            <p>Nuestros <b>cursos presenciales</b> constan de <b>dos horas</b> semanales consecutivas en el mismo día en la sede elegida (Buenos Aires o Mendoza). Además, los grupos están conformados por 12 personas como máximo, para garantizar un aprendizaje óptimo en cada alumno.
+                              <br>  A la hora de inscribirte, <b>el nivel no es una limitación</b> ya que nos adaptamos a las necesidades de nuestros alumnos. Por eso trabajamos con material personalizado y hacemos el seguimiento adecuado para hacer un ajuste en el contenido si es necesario, e identificar cualquier tipo de dificultad. En Be Ready vas a aprender <b>incluso los días feriados</b>, ya que en esos casos seguimos aprendiendo con clases digitalizadas.
+                        </p>
                         </li>
                     </ul>
 
                     <div class="locales-presencial">
                         <ul>
                             <li>
-                                <div class="local">
+                                <div class="local local-bsas">
                                     <h5>Avellaneda, Buenos Aires</h5>
                                     <form action=""><a href="">Ver Ubicación</a></form>
-                                    <div class="info-local">
-                                        <h6>Niños (de 5 a 11 años)</h6>
-                                        <p>Al igual que los cursos completamente presenciales, nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos tanto de forma virtual como presencial</p>
-                                        <h6>Adolescentes (de 12 a 18 años)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten.</p>
-                                    </div>
+                                
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button acordeon-boton acordeon-bsas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                                <h6>Niños (de 5 a 11 años)</h6>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button acordeon-boton acordeon-bsas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                                <h6>Adolescentes (de 12 a 18 años)</h6>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
                                 </div>
                                 
                                 
                             </li>
                             <li>
-                                <div class="local">
+                                <div class="local local-mendoza">
                                     <h5>San Rafael, Mendoza</h5>
                                     <form action=""><a href="">Ver Ubicación</a></form>
                                     <div class="info-local">
-                                        <h6>Niños (de 5 a 11 años)</h6>
-                                        <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
-                                        <h6>Adolescentes (de 12 a 17 años)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
-                                        <h6>Adultos (de 18 años en adelante)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adultos están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button acordeon-boton acordeon-mendoza collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                                    <h6>Niños (de 5 a 11 años)</h6>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button acordeon-boton acordeon-mendoza collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                                    <h6>Adolescentes (de 12 a 17 años)</h6>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button acordeon-boton acordeon-mendoza collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                                      <h6>Adultos (de 18 años en adelante)</h6>
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                      <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                          </div>
+                                       
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <button>Incribirme</button>
+                <button class="inscribirme">Incribirme</button>
             </div>
             
-            <div class="filtro-virtual info-curso">
+            <div class="filtro-virtual info-curso" id="virtual">
                 <img src="imagenes/bsas.jpg" alt="">
 
                 <h2 class="titulo-curso">Cursos virtuales</h2>
                 <div class="cuerpo">
-                    <p>Conectate a las clases en vivo através de Zoom desde cualquier parte del mundo
+                    <p>A través de Zoom
                     </p>
                 </div>
                 <div class="descripcion-curso">
@@ -280,19 +398,58 @@
                             <h4>Feriados</h4>
                             <p>Con clases digitalizadas para seguir aprendiendo</p>
                         </li>
+                        <li>
+                            <p>Nuestros <b>cursos presenciales</b> constan de <b>dos horas</b> semanales consecutivas en el mismo día en la sede elegida (Buenos Aires o Mendoza). Además, los grupos están conformados por 12 personas como máximo, para garantizar un aprendizaje óptimo en cada alumno.
+                              <br>  A la hora de inscribirte, <b>el nivel no es una limitación</b> ya que nos adaptamos a las necesidades de nuestros alumnos. Por eso trabajamos con material personalizado y hacemos el seguimiento adecuado para hacer un ajuste en el contenido si es necesario, e identificar cualquier tipo de dificultad. En Be Ready vas a aprender <b>incluso los días feriados</b>, ya que en esos casos seguimos aprendiendo con clases digitalizadas.
+                        </p>
+                        </li>
                     </ul>
                     <div class="locales-presencial">
                         <ul>
                             <li>
-                                <div class="local">
+                                <div class="local local-virtual">
                                     <h5>Modalidad en vivo</h5>
                                     <div class="info-local">
-                                        <h6>Niños (de 5 a 11 años)</h6>
-                                        <p>Al igual que los cursos completamente presenciales, nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos tanto de forma virtual como presencial</p>
-                                        <h6>Adolescentes (de 12 a 18 años)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten.</p>
-                                        <h6>Adultos (de 18 años en adelante)</h6>
-                                        <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten.</p>
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button acordeon-boton acordeon-virtual collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                                    <h6>Niños (de 5 a 11 años)</h6>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Nuestras clases destinadas a niños de entre 5 y 11 años están pensadas para que adquieran el idioma a través de juegos.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button acordeon-boton acordeon-virtual collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                                    <h6>Adolescentes (de 12 a 17 años)</h6>
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button acordeon-boton acordeon-virtual collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                                      <h6>Adultos (de 18 años en adelante)</h6>
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">
+                                                      <p>Destinadas a todos los niveles, nuestras clases para adolescentes están diseñadas para que trabajen sus habilidades orales y escritas a la vez que se divierten....</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                          </div>
+                                       
                                     </div>
                                     <hr>
                                     <div class="otras-clases">
@@ -316,7 +473,7 @@
                         </ul>
                     </div>
                 </div>
-                <button>Incribirme</button>
+                <button class="inscribirme">Incribirme</button>
 
             </div>
             
