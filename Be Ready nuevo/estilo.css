@@ -86,7 +86,7 @@ ul li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+   /* position: fixed;*/
     flex-wrap: nowrap;
     z-index: 2000;
 
@@ -174,6 +174,10 @@ ul li{
     background-attachment: fixed;
 }
 /*CAJAS*/
+.cajas{
+    display: flex;
+    flex-direction: column;
+}
 .caja p{
     margin-bottom: 0;
 }
@@ -224,7 +228,7 @@ ul li{
     margin: 0;
     background-color: rgb(247, 247, 248);
 }
-.seccion{
+.nosotros, .cursos, .preguntas, .por-que, .inicio{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -307,7 +311,7 @@ ul li{
     font-weight: 600;
     padding: 15px;
    /* background-color: rgba(63, 99, 98, 0.85);*/
-   background-color: rgba(38, 138, 136, 0.7);
+   background-color: rgba(38, 138, 136, 0.801);
    border-radius: 8px;
     color: rgb(247, 247, 248);
     /*border: 4px solid rgb(247, 247, 248);*/
@@ -418,4 +422,117 @@ iframe{
     margin-bottom: 0;
     font-size: 15px;
     color: #25716f;
+}
+.imagen-cursos{
+    display: none;
+}
+@media (min-width: 720px) {
+    .cajas{
+        flex-direction: row;
+    }
+    .caja{
+        width: 25%;
+    }
+    .por-que{
+        padding: 30px 30px 0 30px;
+    }
+    .porque-beready h4{
+        padding: 15px;
+        te
+    }
+    .caracteristica-pq{
+        padding: 10px;
+        width: 50%;
+    }
+    .caracteristicas-pq{
+        display: flex;
+        flex-direction: row;
+    }
+    .seccion {
+        padding: 20px 40px;
+    }
+    .foto-fundadora{
+        display: none;
+    }
+    .nosotros img{
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+        
+    }
+    .presentacion-personal p{
+        padding: 50px 50px;
+        font-style: italic;
+    }
+    .presentacion-personal{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 15px;
+    }
+    .items-nosotros{
+        padding: 30px 70px;
+    }
+    .nosotros, .cursos{
+ 
+        justify-content: baseline;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .cursos{
+        padding: 30px 0 0 0;
+    }
+    .seccion:not(.por-que) {
+        padding-bottom: 0;
+    }
+    .nosotros{
+        flex-direction: row;
+        padding: 30px 0;
+
+    }
+    .cursos{
+        background-repeat: repeat;
+        background-size: 600px;
+
+        background-image: none;
+    }
+    .texto-cursos{
+        display: none;
+    }
+    .div-curso{
+        width: auto;
+        height: auto;
+        justify-content: space-evenly;
+    }
+    .div-curso:hover{
+        background-color: #1b5a58;
+        transition: 0.3s;
+    }
+    .div-curso div p{
+        padding: 0 100px;
+        text-align: center;
+    }
+    .imagen-cursos{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .imagen-cursos:hover{
+        filter: brightness(60%);
+        transition: 0.3s;
+    }
+    .botones-cursos{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+        background-image: url(imagenes/patronbyn.png);
+        background-repeat: repeat;
+        background-size: 600px;
+    }
+    
+    
 }
