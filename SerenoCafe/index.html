@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sereno Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,500;0,600;0,700;1,700&family=Poppins:wght@100;200;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <button class="button-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>          
+        </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                  </li>
+                  <hr>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sucursales</a>
+                  </li>
+                
+                
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="welcome section">
+        <div class="welcome-box">
+            <h1 class="main-title">Bienvenido a Sereno Café</h1>
+            <ul class="schedule">
+                <li class="schedule-days">Lunes a sábados</li>
+                <li class="schedule-hour">12 - 21hs</li>
+            </ul>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="about-box">
+            <h6 class="subtitle about-subtitle">Sobre Nosotros —</h6>
+        <h2 class="title about-title">Qué hace especial a nuestro café</h2>
+        <p class="text about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla aut rerum tempore, distinctio aliquam cupiditate laboriosam adipisci quasi architecto quae minus ea et autem vitae rem alias officia voluptas?</p>
+        <ul class="aboutus-items">
+            <li>
+                <i class="fa-solid fa-check about-item"></i>
+                <p>breve descripcion del item 1</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-check about-item"></i>
+                <p>breve descripcion del item 2</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-check about-item"></i>
+                <p>breve descripcion del item 3</p>
+            </li>
+        </ul>
+        <button class="about-button">
+            Más información
+            
+        </button>
+        </div>
+
+        <!--<div class="items-about">
+            <ul>
+                <li>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+    -->
+        <div class="picture-about">
+            <img src="imagenes/artelatte2.jpg" alt="" class="about-img">
+        </div>
+        
+
+      </section>
+
+      <section class="stores section">
+        <div class="stores-box">
+            <h6 class="subtitle subtitle-stores">Sucursales —</h6>
+            <h2 class="title title-stores">Qué hace especial a nuestro café</h2>
+            <p class="text text-stores">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla aut rerum tempore, distinctio aliquam cupiditate laboriosam adipisci quasi architecto quae minus ea et autem vitae rem alias officia voluptas?</p>
+            <button class="meet-us">
+                Conocenos
+            </button>
+        </div>
+      </section>
+
+      <section class="menu section">
+        <div class="menu-box">
+            <h6 class="subtitle subtitle-menu">Nuestro menú —</h6>
+            <div class="menu-products">
+                <img src="imagenes/artelatte.jpg" alt="" class="product-img">
+                <h2>Cafés de especialidad</h2>
+                <ul class="menu-offer">
+                    <li class="product-box">
+                        <h4 class="product-title">Nombre del café 1</h4>
+                        <p class="product-description">Descripcion del cafe item 1. Lorem ipsum dolor sit amet consectetur.</p>
+                    </li>
+                    <li class="product-box">
+                        <h4 class="product-title">Nombre del café 2</h4>
+                        <p class="product-description">Descripcion del cafe item 2.  Lorem ipsum dolor sit amet consectetur.</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="menu-products">
+                <img src="imagenes/artelatte.jpg" alt="" class="product-img">
+                <h2>Pastelería de especialidad</h2>
+                <ul class="menu-offer">
+                    <li class="product-box">
+                        <h4 class="product-title">Nombre del café 1</h4>
+                        <p  class="product-description">Descripcion del cafe item 1.  Lorem ipsum dolor sit amet consectetur.</p>
+                    </li>
+                    <li class="product-box">
+                        <h4 class="product-title">Nombre del café 2</h4>
+                        <p  class="product-description">Descripcion del cafe item 2.  Lorem ipsum dolor sit amet consectetur.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <button class="menu-button">
+            ver menu completo
+        </button>
+      </section>
+
+      <section class="details-gallery section">
+        <div class="details">
+            <ul class="details-list">
+                <li class="detail">
+                    <i class="fa-solid fa-mug-hot detail-icon"></i>                    <h5 class="detail-title">Detalle 1</h5>
+                    <p class="detail-text">Texto breve del detalle 1</p>
+
+                </li>
+                <li class="detail">
+                    <i class="fa-solid fa-mug-hot detail-icon"></i>                    <h5 class="detail-title">Detalle 1</h5>
+                    <h5 class="detail-title">Detalle 2</h5>
+                    <p class="detail-text">Texto breve del detalle 2</p>
+
+                </li>
+                <li class="detail">
+                    <i class="fa-solid fa-mug-hot detail-icon"></i>                    <h5 class="detail-title">Detalle 1</h5>
+                    <h5 class="detail-title">Detalle 3</h5>
+                    <p class="detail-text">Texto breve del detalle 3</p>
+
+                </li>
+                
+            </ul>
+        </div>
+        <div class="gallery">
+            <img src="" alt="" class="gallery-img">
+            <div class="gallery-box">
+                <h2 class="subtitle subtitle-gallery">Galería de fotos</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti doloribus nam a distinctio ratione eum fuga ullam nulla corporis fugit! Non eveniet unde eligendi esse sit dignissimos dolorum, culpa aspernatur.</p>
+                <button>Ver más</button>
+            </div>
+        </div>
+      </section>
+
+      <footer class="section6">
+        <div class="contact">
+            <h6>Contactanos</h6>
+            <a href="">serenocafe@gmaill.com</a>
+        </div>
+        <div class="ubication">
+            <h6>Ubicación</h6>
+        </div>
+        <div class="follow-us">
+            <h6>Nuestras redes</h6>
+            <div class="follow-icons">
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="reserved-rights">
+            <p>
+               Sereno Café 2024 &copy; - Todos los derechos reservados
+            </p>
+        </div>
+      </footer>
+
+</body>
+
+</html>

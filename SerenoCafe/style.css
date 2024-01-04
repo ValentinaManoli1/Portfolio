@@ -1,0 +1,173 @@
+*{
+    list-style: none;
+}
+h1, h2{
+    font-family: 'DM Serif Display', serif;
+}
+h2{
+    font-weight: 700;
+    font-size: 35px;
+    padding: 15px 0;
+}
+h2:not(.title-stores){
+    color: rgb(0, 31, 63);
+
+}
+h6{
+    font-size: 15px;
+    color: rgb(192, 126, 82);
+    font-weight: 700;
+}
+h3, h4, h5, h6, p{
+    font-family: 'Poppins', sans-serif;
+
+}
+h4{
+    font-size: 17px;
+}
+h6, button{
+    text-transform: uppercase;
+}
+.main-title{
+    font-size: 40px;
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+p:not(.product-description){
+    font-size: 17px;
+}
+
+button{
+    border: none;
+    font-size: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    color: rgb(250, 250, 250);
+    font-family: 'Poppins', sans-serif;
+
+}
+button:not(.button-bars){
+    background-color: rgb(192, 126, 82);
+
+}
+.button-bars{
+background-color: rgb(1, 50, 103);
+}
+.section{
+    padding: 75px 35px;
+}
+
+
+/*MENU OPTIONS*/
+.navbar, .container-fluid{
+    background-color: rgb(0, 31, 63);
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    top: 0;
+    /*VER CONTAINER FLUID*/
+    
+}
+
+/*BODY OF THE PAGE*/
+.welcome{
+    background-image: url(imagenes/cafeteria1.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 0 45px;
+    background-attachment: fixed;
+}
+.welcome-box{
+    background-color: rgb(192, 126, 82, 0.75);
+    color: rgb(250, 250, 250);
+
+    align-self: center;
+    top: 35%;
+    position: relative;
+    padding: 25px;
+    height: auto;
+    
+}
+.schedule-days{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 13px;
+    width: min-content;
+    padding-top: 5px;
+}
+.schedule-hour{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+
+}
+.schedule{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0;
+
+}
+
+/*ABOUT US*/
+.aboutus-items{
+    margin: 10px 10px;
+    padding: 0;
+}
+.aboutus-items li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: solid 1.05px rgb(230, 230, 230);
+    padding: 10px;
+}
+.aboutus-items li p{
+    margin: 0;
+    padding-left: 15px;
+    color: rgb(150, 150, 150)
+}
+.about-img{
+    margin: 25px 0;
+    height: auto;
+    width: 100%;
+}
+
+/*STORES*/
+.stores{
+    background-color: rgb(0, 31, 63);
+    color: rgb(255, 251, 236);
+    padding: 75px 45px;
+}
+
+/*MENU PRODUCTS*/
+.product-img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    margin: 25px 0 0 0;
+}
+.menu-offer{
+    padding-left: 0;
+}
+.product-description{
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+}
+.menu-products h2{
+    margin: 20px 0;
+}
+
+/*DETAILS AND GALLERY*/
+.details-gallery{
+    background-color: rgb(192, 126, 82);
+    
+}
+
+.gallery{
+    background-color: rgb(1, 50, 103);
+    color: rgb(250, 250, 250);
+}
