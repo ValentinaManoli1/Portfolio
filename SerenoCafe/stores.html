@@ -16,6 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
 
 </head>
 
@@ -70,9 +71,9 @@
         </div>
     </nav>
 
-    <section class="welcome section">
+    <section class="welcome section welcome-page">
+        <h1 class="title-page">Sucursales</h1>
         <div class="welcome-box">
-            <h1 class="main-title">Bienvenido a Sereno Café</h1>
             <ul class="schedule">
                 <li class="schedule-days">Lunes a sábados</li>
                 <li class="schedule-hour">12 - 21hs</li>
@@ -80,17 +81,15 @@
         </div>
     </section>
 
-    <section class="about section">
-        <div class="about-box">
-            <h6 class="subtitle about-subtitle">Sobre Nosotros —</h6>
-            <h2 class="title about-title">Qué hace especial a nuestro café</h2>
-            <p class="text about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla aut rerum
-                tempore, distinctio aliquam cupiditate laboriosam adipisci quasi architecto quae minus ea et autem vitae
-                rem alias officia voluptas?</p>
-            <ul class="aboutus-items">
+    <section class="stores-page section">
+        <div class="about-box stores-box">
+            <h6 class="subtitle about-subtitle">Buenos Aires —</h6>
+            <h2 class="title store-title">Palermo</h2>
+            <img src="imagenes/pasteleria.jpg" alt="" class="product-img">
+            <ul class="aboutus-items store-items">
                 <li>
-                    <i class="fa-solid fa-check about-item"></i>
-                    <p>breve descripción del item 1</p>
+                    <i class="fa-solid fa-location-dot about-item"></i>
+                    <a href=""><p>Av. del Libertador 3092</p></a>
                 </li>
                 <li>
                     <i class="fa-solid fa-check about-item"></i>
@@ -101,131 +100,60 @@
                     <p>breve descripción del item 3</p>
                 </li>
             </ul>
-                <form action="aboutus.html" target="_blank">             <button class="about-button button-go">
-                    Más información
-                </button>
-
-                </form>
-
-        </div>
-
-        <!--<div class="items-about">
             
-            <ul>
+           
+        </div>
+        <div class="about-box stores-box">
+            <h6 class="subtitle about-subtitle">Córdoba —</h6>
+            <h2 class="title store-title">Córdoba Capital</h2>
+            <img src="imagenes/pasteleria.jpg" alt="" class="product-img">
+            <ul class="aboutus-items store-items">
                 <li>
-                    <span></span>
+                    <i class="fa-solid fa-location-dot about-item"></i>
+                    <a href=""><p>Av. San Martin 145</p></a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-check about-item"></i>
+                    <p>breve descripción del item 2</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-check about-item"></i>
+                    <p>breve descripción del item 3</p>
                 </li>
             </ul>
-        </div>
-    -->
-        <div class="picture-about">
-            <img src="imagenes/artelatte2.jpg" alt="" class="about-img">
-        </div>
-
-
-    </section>
-
-    <section class="stores section">
-        <div class="stores-box">
-            <h6 class="subtitle subtitle-stores">Sucursales —</h6>
-            <h2 class="title title-stores">Qué hace especial a nuestro café</h2>
-            <p class="text text-stores">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla aut rerum
-                tempore, distinctio aliquam cupiditate laboriosam adipisci quasi architecto quae minus ea et autem vitae
-                rem alias officia voluptas?</p>
-                <form action="stores.html" target="_blank">
-                    <button class="meet-us button-go">
-                        Conocenos
-                    </button>
-                </form>
             
+           
         </div>
-    </section>
-
-    <section class="menu section">
-        <div class="menu-box">
-            <h6 class="subtitle subtitle-menu">Nuestro menú —</h6>
-            <div class="menu-products">
-                <img src="imagenes/artelatte.jpg" alt="" class="product-img">
-                <h2>Cafés de especialidad</h2>
-                <ul class="menu-offer">
-                    <li class="product-box">
-                        <h4 class="product-title">Nombre del café 1</h4>
-                        <p class="product-description">Descripcion del cafe item 1. Lorem ipsum dolor sit amet
-                            consectetur.</p>
-                    </li>
-                    <li class="product-box">
-                        <h4 class="product-title">Nombre del café 2</h4>
-                        <p class="product-description">Descripcion del cafe item 2. Lorem ipsum dolor sit amet
-                            consectetur.</p>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="menu-products">
-                <img src="imagenes/pasteleria.jpg" alt="" class="product-img">
-                <h2>Pastelería de especialidad</h2>
-                <ul class="menu-offer">
-                    <li class="product-box">
-                        <h4 class="product-title">Nombre del café 1</h4>
-                        <p class="product-description">Descripcion del cafe item 1. Lorem ipsum dolor sit amet
-                            consectetur.</p>
-                    </li>
-                    <li class="product-box">
-                        <h4 class="product-title">Nombre del café 2</h4>
-                        <p class="product-description">Descripcion del cafe item 2. Lorem ipsum dolor sit amet
-                            consectetur.</p>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <form action="menu.html" target="_blank">
-            <button class="menu-button button-go">
-                ver menu completo
-            </button>
-        </form>
-        
-    </section>
-
-    <section class="details-gallery section">
-        <div class="details">
-            <ul class="details-list">
-                <li class="detail">
-                    <img src="imagenes/latte.png" alt="">
-                    <h5 class="detail-title">Arte Latte</h5>
-
-                    <p class="detail-text">Texto breve del detalle 1</p>
-
+        <div class="about-box stores-box">
+            <h6 class="subtitle about-subtitle">Río Noegro —</h6>
+            <h2 class="title store-title">Bariloche</h2>
+            <img src="imagenes/pasteleria.jpg" alt="" class="product-img">
+            <ul class="aboutus-items store-items">
+                <li>
+                    <i class="fa-solid fa-location-dot about-item"></i>
+                    <a href=""><p>Av. Belgrano 687</p></a>
                 </li>
-                <li class="detail">
-                    <img src="imagenes/granos-de-cafe.png" alt="">
-                    <h5 class="detail-title">Granos seleccionados</h5>
-                    <p class="detail-text">Texto breve del detalle 2</p>
-
+                <li>
+                    <i class="fa-solid fa-check about-item"></i>
+                    <p>breve descripción del item 2</p>
                 </li>
-                <li class="detail">
-                    <img src="imagenes/medalla.png" alt="">
-                    <h5 class="detail-title">Ganadores nacionales</h5>
-                    <p class="detail-text">Texto breve del detalle 3</p>
-
+                <li>
+                    <i class="fa-solid fa-check about-item"></i>
+                    <p>breve descripción del item 3</p>
                 </li>
-
             </ul>
+            
+           
         </div>
-        <div class="gallery">
-            <img src="imagenes/granos-cafe3.jpg" alt="">
-            <div class="gallery-box">
-                <h2 class="subtitle subtitle-gallery">Galería</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti doloribus nam a distinctio ratione
-                    eum fuga ullam nulla corporis fugit! Non eveniet unde eligendi esse sit dignissimos dolorum, culpa
-                    aspernatur.</p>
-                <button class="button-go">Ver más</button>
-            </div>
-            <img src="imagenes/artelatte4.jpg" alt="">
 
-        </div>
+
+
+    </section>
+    <section class="section added-stores">
+<h2>Te esperamos! Agregar algo</h2>
     </section>
 
+   
     <footer class="section6 section">
         <div class="contact footer-box">
             <h6>Contactanos</h6>
