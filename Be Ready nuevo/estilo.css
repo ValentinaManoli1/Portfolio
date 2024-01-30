@@ -24,9 +24,11 @@ h3{
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 600;
-    text-align: left;
     font-family: 'Josefin Sans', sans-serif;
 
+}
+h3:not(.contacto h3){
+    text-align: left;
 }
 h4, h5{
     font-family: 'Josefin Sans', sans-serif;
@@ -55,11 +57,9 @@ ul li{
     border-radius: 20px;
 }
 .seccion{
-    padding: 30px;
+    padding: 35px;
 }
-.seccion:not(.por-que){
-    padding-bottom: 30px;
-}
+
 .fa-brands:not(.fa-whatsapp, .fa-envelope){
     font-size: 30px;
     border-radius: 50px;
@@ -80,11 +80,13 @@ ul li{
 .nav-celular{
     width: 100%;
     height: 10vh;
-    background-color: #33a7a5;
+   /* background-color: #33a7a5;*/
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0) 25%, rgba(28,36,36,1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   /* position: fixed;*/
+   position: fixed;
     flex-wrap: nowrap;
     z-index: 2000;
 
@@ -212,14 +214,11 @@ ul li{
 /*POR QUE NOSOTROS*/
 .por-que{
     background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%, rgba(247,247,248,1) 95%, rgba(242,218,249,1) 100%);
+background: linear-gradient(0deg, rgba(247,247,248,1) 95%, rgba(242,218,249,1) 100%);
 }
 .porque-beready{
     
-  /*  background-color: rgb(113, 196, 54, 0.35);*/
-    padding: 20px;
-   /* border-radius: 8px;*/
-    border-bottom: solid 0.15px rgb(217, 217, 217);
+  
 }
 .caracteristica-pq h5{
     border-left: solid 3px #2c8b88;
@@ -230,11 +229,17 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%
     padding-top: 10px;
     margin-top: 15px;
 }
-.foto-caracteristica{
+.foto-caracteristica, .foto-nosotros img{
     height: 200px;
-    width: max-content;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
     border-radius: 8px;
     margin: 15px 0;
+}
+.foto-nosotros img{
+    height: 250px;
+
 }
 /*SOBRE NOSOTROS*/
 .secciones-violeta{
@@ -258,11 +263,15 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%
 }
 
 .nosotros img{
-    width: 350px;
-    height: auto;
+   /* width: 350px;
+    height: auto;*/
 }
-.info-nosotros h3{
-    color: #3c6a3c;
+.info-nosotros{
+    display: flex;
+    flex-direction: column;
+}
+.info-nosotros h3, .titulo-preguntas h3{
+    color: #33a7a5;
 }
 .items-lista{
     font-size: 25px;
@@ -340,7 +349,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%
     color: rgb(247, 247, 248);
     /*border: 4px solid rgb(247, 247, 248);*/
     border: none;
-    width: 320px;
+    width: 100%;
     height: auto;
    /* font-size: 25px;*/
     margin-top: 20px;
@@ -356,20 +365,56 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%
     margin: 10px;
 
 }
-.div-curso button{
-    border-radius: 7px;
-    color: rgba(38, 138, 136);
-    font-weight: 600;
+.div-curso button, .boton-nosotros{
+    border-radius: 8px;
+    color: rgba(78, 78, 78);
+    font-weight: 400;
     border: none;
     text-transform: none;
     padding: 10px;
     margin-top: 10px;
-}/*
+    font-family: 'Josefin Sans', 'Lato';
+}
+
+.boton-nosotros{
+    padding: 15px;
+    align-self: center;
+    margin-top: 30px;
+    background-color: #71c436;
+    color: #ffffff;
+}
+
+
+
 .div-curso:hover{
     transition: 0.3s;
-    background-color: rgb(247, 247, 248);
-    color: #33a7a5;
-}*/
+    background-color: #33a7a5;
+    color: ;
+}
+.div-curso:hover .tipo-presencial{
+    background-color: #f1d6ff;
+    border: #f1d6ff;
+    transition: 0.3s;
+    color: rgb(77, 77, 77);
+
+}
+.div-curso:hover .tipo-semipresencial{
+    transition: 0.3s;
+background-color: #ccfaaa;
+border: #ccfaaa;
+color: rgb(77, 77, 77);
+
+}
+.div-curso:hover .tipo-online{
+    background-color: #deffee;
+    border: #ccfaaa;
+    transition: 0.3s;
+
+    color: rgb(77, 77, 77);
+
+}
+
+
 .curso-online button{
     background-color: #deffee;
 
@@ -381,6 +426,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%
     background-color: #ccfaaa;
 }
 .div-tipo-curso{
+    font-family: 'Josefin Sans';
     border-radius: 50px;
     background-color: transparent;
     padding: 10px 15px;
@@ -400,8 +446,13 @@ height: auto;
     font-weight: 550;
     color: rgb(77, 77, 77);
 }
+.accordion-item{
+    margin-bottom: 10px;
+    border: none;
+}
 .accordion-body{
     font-size: 20px;
+    font-family: 'Lato';
 }
 /*CONTACTO*/
 .contacto{
@@ -432,7 +483,9 @@ iframe{
     width: max-content;
     height: auto;
 }
-
+.ubicacion{
+    margin: 20px 0;
+}
 .contacto img{
     width: 180px;
     height: auto;
@@ -451,6 +504,9 @@ iframe{
     display: none;
 }
 @media (min-width: 720px) {
+    h3{
+        font-size: 45px;
+    }
     .cajas{
         flex-direction: row;
     }
@@ -462,7 +518,7 @@ iframe{
     }
     .porque-beready h4{
         padding: 15px;
-        te
+        
     }
     .caracteristica-pq{
         padding: 10px;
@@ -473,70 +529,64 @@ iframe{
         flex-direction: row;
     }
     .seccion {
-        padding: 70px 40px;
-    }
-    .foto-fundadora{
-        display: none;
-    }
-    .nosotros img{
-        width: 400px;
-        height: auto;
-        object-fit: cover;
-        
-    }
-    .presentacion-personal p{
-        padding: 50px 50px;
-        font-style: italic;
-    }
-    .presentacion-personal{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        background-color: #ffffff;
-        border-radius: 15px;
-    }
-    .items-nosotros{
-        padding: 30px 70px;
-    }
-    .nosotros, .cursos{
- 
-        justify-content: baseline;
-        flex-wrap: nowrap;
+        padding: 70px;
         height: auto;
     }
-    .cursos{
-        padding: 30px 0 0 0;
-    }
-    .seccion:not(.por-que) {
-        padding-bottom: 0;
-    }
-    .nosotros{
-        flex-direction: row;
-        padding: 30px 0;
+
+
+    .descripcion-fundadora{
+        align-self: center;
+        height: 100%;
+        width: 40%;
+        background-color: #33a7a5;
 
     }
+    .seccion .descripcion-fundadora p{
+        font-size: 22px;
+        padding: 30px 25px;
+        color: #ffffff;
+        align-items: center;
+        
+    }
+    .foto-nosotros{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 250px;
+    }
+    .foto-nosotros img{
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    
+
+    .items-nosotros{
+        margin-top: 20px;
+        padding: 30px 70px;
+        border-top: solid 1.5px #e2e2e2;
+    }
+    
+    
     .cursos{
         background-repeat: repeat;
         background-size: 600px;
 
         background-image: none;
     }
-    .texto-cursos{
-        display: none;
-    }
+    
     .div-curso{
-        width: auto;
-        height: auto;
-        justify-content: space-evenly;
+        width: 300px;
+        height: 580px;
+        justify-content: space-around;
     }
     .div-curso:hover{
         background-color: #1b5a58;
         transition: 0.3s;
     }
-    .div-curso div p{
-        padding: 0 100px;
-        text-align: center;
-    }
+    
     .imagen-cursos{
         display: flex;
         width: 100%;
