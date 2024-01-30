@@ -21,10 +21,10 @@ h2{
     margin-left: 10px;
 }
 h3{
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -55,9 +55,7 @@ ul li{
     border-radius: 20px;
 }
 .seccion{
-    padding-top: 30px;
-    padding-left:  20px;
-    padding-right:  20px;
+    padding: 30px;
 }
 .seccion:not(.por-que){
     padding-bottom: 30px;
@@ -102,8 +100,9 @@ ul li{
     font-size: 30px;
 }
 .offcanvas-body, .offcanvas-header{
-    background-color: #33a7a5;
+    background-color: #25716f;
 }
+
 .offcanvas-body{
     text-align: center;
     justify-items: center;
@@ -136,7 +135,7 @@ ul li{
 }
 .nav-link:hover{
     transition: 0.3s;
-    color: #1b5a58;
+    color: #d8d8d8;
 }
 .navbar-nav{
     justify-content: space-around;
@@ -211,22 +210,40 @@ ul li{
     
 }
 /*POR QUE NOSOTROS*/
+.por-que{
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(247,247,248,1) 7%, rgba(247,247,248,1) 95%, rgba(242,218,249,1) 100%);
+}
 .porque-beready{
     
-    background-color: rgb(113, 196, 54, 0.35);
+  /*  background-color: rgb(113, 196, 54, 0.35);*/
     padding: 20px;
-    border-radius: 8px;
+   /* border-radius: 8px;*/
+    border-bottom: solid 0.15px rgb(217, 217, 217);
 }
 .caracteristica-pq h5{
     border-left: solid 3px #2c8b88;
     padding-left: 5px;
     color: #2c8b88;
 }
+.caracteristica-pq{
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.foto-caracteristica{
+    height: 200px;
+    width: max-content;
+    border-radius: 8px;
+    margin: 15px 0;
+}
 /*SOBRE NOSOTROS*/
 .secciones-violeta{
     padding: 0;
     margin: 0;
-    background-color: rgb(247, 247, 248);
+    background-color: #f7f7f8;
+}
+.nosotros{
+    background-color: #ffffff;
 }
 .nosotros, .cursos, .preguntas, .por-que, .inicio{
     display: flex;
@@ -244,18 +261,25 @@ ul li{
     width: 350px;
     height: auto;
 }
-
+.info-nosotros h3{
+    color: #3c6a3c;
+}
 .items-lista{
     font-size: 25px;
-    font-weight: 700;
-    text-transform: uppercase;
+   /* font-weight: 700;
+    text-transform: uppercase;*/
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     color: #71c436;
-    text-shadow: 5px 2px 6px rgba(0,0,0,0.10);
+    text-shadow: 5px 2px 6px rgba(0,0,0,0.05);
     margin-bottom: 0;
 
     
+}
+.desc-lista{
+    color: rgb(150, 150, 150);
+    padding-left: 15px;
+
 }
 .item-nosotros p{
     margin-bottom: 0;
@@ -274,8 +298,8 @@ ul li{
     padding-right: 5px;
 }
 .nosotros ul{
-    padding-left: 0;
-    padding-top: 20px;
+    padding-left: 5px;
+    
 
 }
 .nosotros ul li:not(.item4){
