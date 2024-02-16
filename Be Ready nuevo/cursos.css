@@ -282,6 +282,9 @@ ul li {
     margin-bottom: 0;
 
 }
+.filtro-virtual img{
+    object-position: bottom;
+}
 
 .boton-volver {
     padding: 15px;

@@ -280,8 +280,13 @@ background: linear-gradient(0deg, rgba(247,247,248,1) 95%, rgba(242,218,249,1) 1
     display: flex;
     flex-direction: column;
 }
-.info-nosotros h3, .titulo-preguntas h3{
+.info-nosotros h3, .titulo-preguntas h3, .titulo-preguntas h3{
     color: #33a7a5;
+}
+.titulo-preguntas{
+    text-align: left;
+    display: block;
+    justify-content: left;
 }
 .items-lista{
     font-size: 25px;
@@ -466,6 +471,7 @@ height: auto;
 .accordion-item{
     margin-bottom: 10px;
     border: none;
+    
 }
 .accordion-body{
     font-size: 20px;
@@ -597,14 +603,18 @@ iframe{
     }
     
     .div-curso{
-        width: 300px;
-        height: 580px;
+        width: 260px;
+    height: 700px;
         justify-content: space-around;
         margin: 4px;
     }
     .div-curso:hover{
         background-color: #1b5a58;
         transition: 0.3s;
+    }
+    .div-curso h2{
+        font-size: 35px;
+
     }
     
     .imagen-cursos{
@@ -627,6 +637,10 @@ iframe{
         background-repeat: repeat;
         background-size: 600px;
     }
+
+    .accordion-item, .accordion, .accordion-body{
+        max-width: 1000px;
+    } /*MODIFICAR*/
     
 
     

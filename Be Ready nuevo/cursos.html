@@ -331,7 +331,7 @@
             <!--VIRTUAL-->
 
             <div class="filtro-virtual info-curso" id="virtual">
-                <img src="imagenes/bsas.jpg" alt="" id="imagen-curso" class="collapsed" type="button"
+                <img src="imagenes/onlineclass2.jpg" alt="" id="imagen-curso" class="collapsed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#flush-collapseBox3" aria-expanded="false"
                     aria-controls="flush-collapseBox3">
 
@@ -457,16 +457,6 @@
         </div>
 
         <script>
-            // Obtener referencia al div "cuerpo" y a la imagen
-            const cuerpoCurso = document.getElementById('cuerpo-curso');
-            const imagenCurso = document.getElementById('imagen-curso');
-            let anchoActual = '40%';
-
-            // Agregar evento clic a la imagen y al div "cuerpo"
-            imagenCurso.addEventListener('click', toggleAnchoCuerpo);
-            cuerpoCurso.addEventListener('click', toggleAnchoCuerpo);
-
-            // Función para cambiar el ancho del div "cuerpo"
             function toggleAnchoCuerpo() {
                 if (anchoActual === '40%') {
                     cuerpoCurso.style.width = '100%';
@@ -476,7 +466,26 @@
                     anchoActual = '40%';
                 }
             }
+        
+            const cuerpoCurso = document.getElementById('cuerpo-curso');
+            const imagenCurso = document.getElementById('imagen-curso');
+            let anchoActual = '40%';
+        
+            function agregarEvento() {
+                if (window.innerWidth >= 760) {
+                    imagenCurso.addEventListener('click', toggleAnchoCuerpo);
+                    cuerpoCurso.addEventListener('click', toggleAnchoCuerpo);
+                } else {
+                    imagenCurso.removeEventListener('click', toggleAnchoCuerpo);
+                    cuerpoCurso.removeEventListener('click', toggleAnchoCuerpo);
+                }
+            }
+        
+            agregarEvento();
+        
+            window.addEventListener('resize', agregarEvento);
         </script>
+        
 
 
 
