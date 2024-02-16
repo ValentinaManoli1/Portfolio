@@ -82,15 +82,15 @@ ul li {
 .inscribirme{
     border-radius: 7px;
     color: rgb(255, 255, 255);
-    font-weight: 600;
     border: none;
     text-transform: none;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
     background-color: #e13535;
     text-transform: uppercase;
     margin-left: 25%;
     padding: 15px;
+    font-family: 'Josefin Sans';
     
 }
 .inscribirme:hover{
@@ -207,13 +207,17 @@ ul li {
 
 .boton-hablemos {
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     padding: 15px;
     font-size: 20px;
     font-family: 'Lato';
-    color: #1b5a58;
+    color: rgb(246, 252, 252);
     font-weight: 600;
-    background-color: #DFA3EF;
+    background-color: #4cbd3b;
+}
+.boton-hablemos i{
+    margin: 0 0 0 7px;
+    font-size: 30px;
 }
 
 .boton-hablemos:hover {
@@ -234,6 +238,7 @@ ul li {
     align-items: center;
 }
 
+
 .seccion p:not(.items-lista, .p-copywrite) {
     font-size: 20px;
 }
@@ -253,19 +258,29 @@ ul li {
     font-weight: 600;
     font-size: 35px;
     /* padding: 20px;*/
-    color: #25716f;
     text-align: left;
     margin: 0;
 }
-
+.cuerpo{
+    padding: 20px;
+    color: rgb(247, 247, 248);
+}
+.cuerpo-presencial {
+    background-color: #a67ed4;
+}
+.cuerpo-semipresencial{
+    background-color: #64c52c;
+}
+.cuerpo-virtual{
+    background-color: #4dc1bf;
+}
 .cuerpo p {
     padding: 5px 0;
-    color: rgb(100, 100, 100);
+    color: rgb(223, 223, 223);
     text-align: left;
     font-size: 18px;
     margin-bottom: 0;
 
-    /*VER ESTPOOOOOO*/
 }
 
 .boton-volver {
@@ -356,29 +371,36 @@ ul li {
 .info-curso {
     width: 95%;
     height: auto;
-    padding: 30px;
     margin: 30px 0;
     background-color: rgb(255, 255, 255);
     border-radius: 7px;
-
+    padding-bottom: 30px;
     box-shadow: #91919162 0px 0px 15px 0px;
+
+
+    padding: 0;
+
+}
+.box-curso{
+    padding: 30px;
+
+
 
 }
 
 .info-curso img {
     width: 100%;
-    height: 240px;
+    height: 340px;
     object-fit: cover;
-
-    /*VER ESTOOOOOOOOO*/
-    display: none;
+    position: relative;
 }
+
 
 .descripcion-curso ul {
     padding-left: 0;
     justify-items: center;
 }
-.descripcion-curso ul li p{
+.descripcion{
     padding: 8px;
 }
 
@@ -392,10 +414,18 @@ ul li {
 
 .item-caracteristica h4,
 .item-caracteristica i {
-    color: #4dc1bf;
     text-align: left;
     margin: 5px;
 
+}
+.lista-c-presencial{
+    color: rebeccapurple;
+}
+.lista-c-semipresencial{
+    color: #64c52c;
+}
+.lista-c-virtual{
+    color: #4dc1bf;
 }
 
 .item-caracteristica h4 {
@@ -409,12 +439,17 @@ ul li {
 .item-caracteristica i {
     font-size: 50px;
     align-self: center;
-    /* background-color: #f1d6ff;*/
     border-radius: 50px;
     padding: 15px;
 }
 .otras-clases h4{
-    color: rgb(100, 197, 44);
+    color: #3977dc;  /*VER*/
+}
+.lista-otras-clases{
+    margin-top: 50px;
+}
+.otraclase{
+    margin-top: 30px;
 }
 .local {
     margin-top: 15px;
@@ -426,19 +461,19 @@ ul li {
     font-size: 25px;
 }
 
-.local-mendoza h5{
+.locales-presencial h5{
     color: #c17ed4;
     border-bottom: solid 4px #c17ed4;
 
 }
-.local-bsas h5{
-    color: #a67ed4;
-    border-bottom: solid 4px #a67ed4;
+.locales-semipresencial h5{
+    color: #73d738;
+    border-bottom: solid 4px #73d738;
 
 }
 .local-virtual h5{
-    color: #7239b3;
-    border-bottom: solid 4px #7239b3;
+    color: #53d1ce;
+    border-bottom: solid 4px #53d1ce;
 
 }
 
@@ -452,25 +487,23 @@ ul li {
 .inscribirme{
 
 }
-/*ACORDEON*/
-.accordion-item{
-    border: none;
-}
-.acordeon-boton {
+/*EDADES*/
+
+.edad{
     border: none;
     padding: 15px;
     border-radius: 7px;
     margin-top: 10px;
 }
 
-.acordeon-mendoza {
+.edades-p {
     background-color: #c17ed4ba;
 }
-.acordeon-bsas{
-    background-color: #a67ed4c2;
+.edades-s{
+    background-color: #73d738;
 }
-.acordeon-virtual{
-    background-color: #7239b3c8;
+.edades-v{
+    background-color: #53d1ce;
 }
 
 
@@ -528,4 +561,113 @@ iframe {
     margin-bottom: 0;
     font-size: 15px;
     color: #25716f;
+}
+
+
+/*PÁGINA NOSOTROS*/
+.seccion-nosotros{
+    padding: 20px;
+}
+.imagen-nosotros img{
+    width: 100%; /*CAMBIAR*/
+    height: 80vh;
+    object-fit: cover;
+}
+.presentacion{
+    background-color: #33a7a575;
+    padding: 28px;
+    z-index: 1500;
+    position: relative;
+    margin: -300px 30px 0 30px;
+    color: white;
+    text-shadow: 1.5px 1.5px 9px black;
+    font-size: 18px;
+
+}
+/*HIDDEN PRUEBA*/
+
+
+
+@media (min-width: 760px) {
+    .seccion{
+        display: block;
+    }
+    .locales-box{
+        display: flex;
+        flex-direction: row;
+    }
+    .locales-box li{
+        width: 50%;
+    }
+    .local-bsas{
+        margin-right: 20px;
+    }
+    .descripcion-curso ul:not(.lista-otras-clases){
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item-caracteristica{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    .item-caracteristica h4{
+        text-align: center;
+        padding-top: 5px;
+
+    }
+    .cuerpo{
+        position: relative;
+        width: 40%;
+        padding: 100px 40px; /*CORREGIR PADDING TOP-BOTTOM PARA QUE QUEDE CENTRADO, PROBAR CON ALIGN ITEMS CENTER*/
+        height: 340px;
+        margin-top: -340px;
+
+        
+        transition: width 0.5s ease;
+    }
+    .cuerpo p{
+        color: rgb(230, 230, 230);
+    }
+    .cuerpo-presencial{
+        background-color: #a67ed4d2;
+
+    }
+    .cuerpo-semipresencial{
+        background-color: #64c52cd2;
+    }
+    .cuerpo-virtual{
+        background-color: #4dc1bfd2;
+    }
+    .lista-c-presencial .item-caracteristica i p{
+        color: #a67ed4;
+    }
+    .lista-c-semipresencial .item-caracteristica i p{
+        color: #64c52c
+    }
+    .lista-c-virtual .item-caracteristica i p{
+        color: #4dc1bf
+    }
+
+    .titulo-curso{
+        color: rgb(253, 253, 253);
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .lista-otras-clases{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .otraclase{
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .item-caracteristica{
+        width: 250px;
+    }
 }
