@@ -7,7 +7,7 @@ a{
     
 }
 h1, h2{
-    font-family: 'Beyond the mountains';
+    font-family: 'Beyond the mountains', sans-serif;
 
 }
 h1{
@@ -641,8 +641,8 @@ iframe{
         background-size: 600px;
     }
 
-    .accordion-item, .accordion, .accordion-body{
-        max-width: 1000px;
+    .acordeon-preguntas{
+        max-width: 600px;
     } /*MODIFICAR*/
     
 

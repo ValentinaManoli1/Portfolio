@@ -116,10 +116,10 @@
     <section class="seccion oferta-cursos accordion accordion-flush" id="accordionFlushCursos">
         <div class="botones-cursos filtro-curso">
             <div class="filtro-presencial info-curso" id="presencial">
-                <img src="imagenes/bsas.jpg" alt="" id="imagen-curso" class="collapsed" type="button"
+                <img src="imagenes/bsas.jpg" alt="" class="imagen-curso collapsed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#flush-collapseBox" aria-expanded="false"
                     aria-controls="flush-collapseBox">
-                <div class="cuerpo  cuerpo-presencial  collapsed" id="cuerpo-curso" type="button"
+                <div class="cuerpo cuerpo-curso  cuerpo-presencial  collapsed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#flush-collapseBox" aria-expanded="false"
                     aria-controls="flush-collapseBox">
                     <h2 class="titulo-curso">Cursos presenciales</h2>
@@ -222,11 +222,11 @@
 
 
             <div class="filtro-semipresencial info-curso" id="semipresencial">
-                <img src="imagenes/bsas.jpg" alt="" id="imagen-curso" class="collapsed" type="button"
+                <img src="imagenes/bsas.jpg" alt="" class="imagen-curso collapsed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#flush-collapseBox2" aria-expanded="false"
                     aria-controls="flush-collapseBox2">
 
-                <div class="cuerpo cuerpo-semipresencial  collapsed" id="cuerpo-curso" type="button"
+                <div class="cuerpo cuerpo-curso cuerpo-semipresencial  collapsed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#flush-collapseBox2" aria-expanded="false"
                     aria-controls="flush-collapseBox2">
                     <h2 class="titulo-curso">Cursos semipresenciales</h2>
@@ -331,11 +331,11 @@
             <!--VIRTUAL-->
 
             <div class="filtro-virtual info-curso" id="virtual">
-                <img src="imagenes/onlineclass2.jpg" alt="" id="imagen-curso" class="collapsed" type="button"
+                <img src="imagenes/onlineclass2.jpg" alt="" class="imagen-curso collapsed" type="button"
                     data-bs-toggle="collapse" data-bs-target="#flush-collapseBox3" aria-expanded="false"
                     aria-controls="flush-collapseBox3">
 
-                <div class="cuerpo cuerpo-virtual collapsed" id="cuerpo-curso" type="button" data-bs-toggle="collapse"
+                <div class="cuerpo cuerpo-curso cuerpo-virtual collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseBox3" aria-expanded="false" aria-controls="flush-collapseBox3">
                     <h2 class="titulo-curso">Cursos virtuales</h2>
 
@@ -396,18 +396,23 @@
                                         <ul class="lista-otras-clases">
                                             <li class="otraclase">
                                                 <h4>English in company</h4>
-                                                <p>English in Company es una modalidad destinada a las empresas que busquen capacitar a sus empleados en cualquier nivel de inglés.</p>
+                                                <p>English in Company es una modalidad destinada a las empresas que
+                                                    busquen capacitar a sus empleados en cualquier nivel de inglés.</p>
                                             </li>
                                             <li class="otraclase">
                                                 <h4>Viajeros</h4>
                                                 <p>
-                                                    ¿Viajás y querés sentirte más seguro con el idioma? Esta modalidad te va a permitir entrenar tus habilidades comunicativas para que te sientas cómodo y libre en tu viaje.
+                                                    ¿Viajás y querés sentirte más seguro con el idioma? Esta modalidad
+                                                    te va a permitir entrenar tus habilidades comunicativas para que te
+                                                    sientas cómodo y libre en tu viaje.
                                                 </p>
                                             </li>
                                             <li class="otraclase">
                                                 <h4>Flex individuales</h4>
                                                 <p>
-                                                    Si tu objetivo es alcanzar una mayor fluidez, las clases Flex te van a ayudar ya que, a través de encuentros individuales, nos vamos a enfocar en aquellas habilidades que desees mejorar.
+                                                    Si tu objetivo es alcanzar una mayor fluidez, las clases Flex te van
+                                                    a ayudar ya que, a través de encuentros individuales, nos vamos a
+                                                    enfocar en aquellas habilidades que desees mejorar.
                                                 </p>
                                             </li>
                                         </ul>
@@ -457,35 +462,36 @@
         </div>
 
         <script>
-            function toggleAnchoCuerpo() {
-                if (anchoActual === '40%') {
-                    cuerpoCurso.style.width = '100%';
-                    anchoActual = '100%';
-                } else {
-                    cuerpoCurso.style.width = '40%';
-                    anchoActual = '40%';
-                }
-            }
-        
-            const cuerpoCurso = document.getElementById('cuerpo-curso');
-            const imagenCurso = document.getElementById('imagen-curso');
-            let anchoActual = '40%';
-        
-            function agregarEvento() {
-                if (window.innerWidth >= 760) {
-                    imagenCurso.addEventListener('click', toggleAnchoCuerpo);
-                    cuerpoCurso.addEventListener('click', toggleAnchoCuerpo);
-                } else {
-                    imagenCurso.removeEventListener('click', toggleAnchoCuerpo);
-                    cuerpoCurso.removeEventListener('click', toggleAnchoCuerpo);
-                }
-            }
-        
-            agregarEvento();
-        
-            window.addEventListener('resize', agregarEvento);
+            document.querySelectorAll('.cuerpo').forEach(function(cuerpoCurso) {
+    let anchoActual = '40%';
+
+    function toggleAnchoCuerpo() {
+        if (anchoActual === '40%') {
+            cuerpoCurso.style.width = '100%';
+            anchoActual = '100%';
+        } else {
+            cuerpoCurso.style.width = '40%';
+            anchoActual = '40%';
+        }
+    }
+
+    function agregarEvento() {
+        if (window.innerWidth >= 760) {
+            cuerpoCurso.previousElementSibling.addEventListener('click', toggleAnchoCuerpo);
+            cuerpoCurso.addEventListener('click', toggleAnchoCuerpo);
+        } else {
+            cuerpoCurso.previousElementSibling.removeEventListener('click', toggleAnchoCuerpo);
+            cuerpoCurso.removeEventListener('click', toggleAnchoCuerpo);
+        }
+    }
+
+    agregarEvento();
+
+    window.addEventListener('resize', agregarEvento);
+});
+
         </script>
-        
+
 
 
 
@@ -540,7 +546,8 @@
 
         <div class="copywrite">
             <p class="p-copywrite">Be Ready 2023 &copy; - Todos los derechos reservados</p>
-            <a href="https://www.linkedin.com/in/valentinamanoli/" target="_blank" class="hechopor">Hecho por VM   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://www.linkedin.com/in/valentinamanoli/" target="_blank" class="hechopor">Hecho por VM <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
     </footer>
 </body>
