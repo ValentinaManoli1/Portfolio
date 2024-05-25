@@ -65,20 +65,6 @@ ul li {
     border-radius: 50px;
 }
 
-.filtro-curso-btn {
-    border-radius: 50px;
-    
-    font-weight: 550;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans';
-    padding: 15px;
-    margin: 10px 3px;
-}
-.filtro-curso-btn{
-    color: rgba(38, 138, 136);
-    border: solid 3px rgba(38, 138, 136);
-    background-color: rgb(255, 255, 255);
-}
 .inscribirme{
     border-radius: 7px;
     color: rgb(255, 255, 255);
@@ -98,11 +84,6 @@ ul li {
     transition: 0.3s;
 }
 
-.filtro-curso-btn:hover {
-    background-color: rgba(38, 138, 136);
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
-}
 
 .seccion {
     padding: 35px;
@@ -110,12 +91,16 @@ ul li {
 
 }
 
-.fa-brands:not(.fa-whatsapp, .fa-envelope) {
+.fa-brands:not(.fa-whatsapp, .fa-envelope){
     font-size: 30px;
     border-radius: 50px;
-    background-color: #25716f;
+    background-color: #2c8b88;
     padding: 15px;
     color: rgb(247, 247, 248);
+    margin-left: 5px;
+}
+.offcanvas-body .fa-brands:not(.fa-whatsapp){
+    background-color: #022221;
 }
 
 .fa-brands:not(.fa-whatsapp, .fa-envelope):hover {
@@ -154,9 +139,8 @@ ul li {
     font-size: 30px;
 }
 
-.offcanvas-body,
-.offcanvas-header {
-    background-color: #33a7a5;
+.offcanvas-body, .offcanvas-header{
+    background-color: #001817;
 }
 
 .offcanvas-body {
@@ -194,6 +178,15 @@ ul li {
     font-family: 'Lato';
     color: white;
     padding-bottom: 15px;
+
+    
+}
+.nav-link{
+    text-align: left;
+    border-bottom: solid 1px rgb(147 163 153 / 28%);
+}
+.boton-hablemos .fa-whatsapp{
+    font-size: 23px;
 }
 
 .nav-link:hover {
@@ -208,7 +201,8 @@ ul li {
 .boton-hablemos {
     border: none;
     border-radius: 8px;
-    padding: 15px;
+    padding: 15px 45px;
+    margin-top: 30px;
     font-size: 20px;
     font-family: 'Lato';
     color: rgb(246, 252, 252);
@@ -243,12 +237,14 @@ ul li {
     font-size: 20px;
 }
 
+
 /*CUERPO */
 
 .titulo-cursos {
     background-color: rgb(246, 252, 252);
     width: 100%;
-    padding-top: 15vh;
+
+    padding: 19vh 0 10vh;
 
 
 }
@@ -274,16 +270,21 @@ ul li {
 .cuerpo-virtual{
     background-color: #4dc1bf;
 }
+
 .cuerpo p {
-    padding: 5px 0;
+    margin-top: 10px;
+    padding-left: 7px;
     color: rgb(223, 223, 223);
     text-align: left;
     font-size: 18px;
     margin-bottom: 0;
 
+    border-left: solid 3px;
+
 }
-.filtro-virtual img{
-    object-position: bottom;
+.fa-chevron-down{
+    text-align: end;
+    font-size: 20px;
 }
 
 .boton-volver {
@@ -304,13 +305,7 @@ ul li {
     padding-right: 7px;
 }
 
-.filtro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 .botones-cursos {
     display: flex;
@@ -708,6 +703,8 @@ background: radial-gradient(circle, rgba(226,250,209,1) 1%, rgba(255,255,255,1) 
         color: rgb(253, 253, 253);
         font-weight: 400;
         font-size: 40px;
+
+       
     }
     .lista-otras-clases{
         display: flex;
@@ -739,7 +736,7 @@ background: radial-gradient(circle, rgba(226,250,209,1) 1%, rgba(255,255,255,1) 
     /*PAGINA NOSOTROS*/
     .imagen-nosotros img{
         height: 50vh;
-        object-position: top;
+        object-position: center;
     }
 
     .mision-vision{
